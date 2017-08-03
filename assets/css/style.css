@@ -15,12 +15,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 @font-face {
   font-family: Zawgyi-One;
-  src: url(../fonts/zawgyi.ttf);
-  format('truetype');
+  src: url(../fonts/zawgyi.ttf) format('truetype');
   font-style: normal;
 }
 
-body{background-color:#fff; color:#333; overflow-x:hidden !important}
+body{background-color:#fff; color:#000; overflow-x:hidden !important}
 ul{padding:0; margin:0; list-style:none}
 a{text-decoration:none; color:#000; font-family:Zawgyi-One, Arial, Helvetica, sans-serif;}
 a:hover{color:#646464; text-decoration:underline;}
@@ -57,7 +56,7 @@ img:hover{opacity:0.75}
 .default-btn:hover{background-color:#0a8ec4; color:#fff}
 .transition{-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
 #preloader{position:fixed; top:0; left:0; right:0; bottom:0; background-color:#fff; z-index:99}
-#status{width:200px; height:200px; position:absolute; left:50%; top:50%; background-image:url("images/status.gif"); background-repeat:no-repeat; background-position:center; margin:-100px 0 0 -100px}
+#status{width:200px; height:200px; position:absolute; left:50%; top:50%; background-image:url("images/duwun-status.gif"); background-repeat:no-repeat; background-position:center; margin:-100px 0 0 -100px}
 .scrollToTop{bottom:105px; display:none; font-size:32px; font-weight:bold; height:50px; position:fixed; right:50px; text-align:center; text-decoration:none; width:50px; z-index:9; border:1px solid; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
 .scrollToTop:hover, .scrollToTop:focus{text-decoration:none; outline:none}
 #header{background-color:#ed7123;min-height:100px;}
@@ -97,7 +96,7 @@ section .container {max-width:1038px;padding:0;}
 .navbar-default .navbar-toggle .icon-bar{background-color:#fff}
 
 #main-teasers{}
-#main-teasers .big_teaser_article{padding-bottom: 30px;}
+.big_teaser_article{padding-top: 15px; padding-bottom: 30px;}
 #main-content{margin-top:25px; margin-bottom:30px}
 .topadd_bar{height:90px; margin-bottom:20px; margin-left:auto; margin-right:auto; width:728px}
 .left_sidebar{float:left; display:inline; width:100%}
@@ -109,17 +108,22 @@ display: table-cell;
 padding-bottom: 30px;
 }
 .single_widget > h2{
-	font-size:19px;
+	font-size:24px;
 	text-align:center;
 	margin-top:0;
 	padding-top: 5px;
-	border-bottom:1px dotted #e3e3e3;
+	border-bottom:1px dotted #333;
+	line-height: 1.4;
 }
 .single_widget > h2 a{color:#fff; font-family:Zawgyi-One, Arial, Helvetica, sans-serif;}
-.single_widget.trending .trendiing_category,
-.single_widget.trending .trendiing_title{
+.single_widget.trending .trendiing_article{
 	text-align:center;
+	font-weight:bolder;
+	line-height: 1.8;
+	margin-top:6px;
 }
+.single_widget strong.teaser_category{}
+.single_widget strong.teaser_category a{text-transform:uppercase;}
 .post_nav li{border-bottom:1px dashed #ddd; float:left; width:100%; margin-bottom:30px; padding-bottom:10px}
 .post_nav figure{position:relative; float:left; overflow:hidden; width:100%; text-align:center; cursor:pointer}
 .post_nav figure img{position:relative; display:block; min-height:100%; max-width:100%; opacity:0.8}
@@ -191,11 +195,63 @@ section#content .slider_tittle:hover, .slider_tittle:focus{color:#fff}
 	width: 100%;
     margin: 0 auto;
 }
-.teaser_article{background:none repeat scroll 0 0 white; float:left; padding:15px; padding-left: 0; position:relative;}
-.article_category{float:left; display:inline; width:100%; padding-bottom: 12px; border-bottom:2px dotted #bbb;}
-.article_category > a{margin-right:2px}
-.article_category > a i{margin-right:2px}
+.teaser_article{background:none repeat scroll 0 0 white; float:left; padding: 0 15px 15px 15px; padding-left: 0; position:relative;}
+.post-meta.group{text-transform:uppercase; font-weight:bolder; float:left; display:inline; width:100%; line-height:3.5; border-bottom:1px dotted #333;}
+.post-meta.group span.time,
+.post-meta.group .teaser_category{margin-right:4px}
+.post-meta.group a.social_share,
+.post-meta.group a.sponsored_by{color: #999;}
+.post-meta.group a.sponsored_by{float: right;}
+.post-meta.group a.sponsored_by:hover{text-decoration:none;background-color:#efefef;}
+.post-meta.group a.sponsored_by small{font-size:10px;position:absolute;margin-top:-4px;margin-left:4px;}
+.post-meta.group a.sponsored_by strong{
+	margin-bottom:-10px;
+	display: inline-block;
+	vertical-align: bottom;
+	padding-right: 8px;
+	padding-left: 4px;
+}
+article span.time {
+    background: url(images/icon_clock.png) 0px 2px no-repeat;
+    margin-top: 0;
+    font-size: 14px;
+    color: #999;
+    padding: 0 4px 0 16px;
+}
 .article_title{float:left; font-size:22px; line-height:1.3em; margin-top:11px; width:100%}
+.article_title.lead{font-size:24px;}
+.article_author{text-transform:uppercase; color:gray;font-size:12px;font-weight:bolder;}
+.news_letter_container{
+	text-align: center;
+	overflow: hidden;
+}
+i.news_letter_dashed_line {
+	font-size:160px;
+	font-weight:bolder;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 0.2;
+}
+.news_letter_container input.centered_placeholder{
+}
+.news_letter_container input.centered_placeholder::-webkit-input-placeholder {
+   text-align: center;
+}
+
+.news_letter_container input.centered_placeholder:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+.news_letter_container input.centered_placeholder::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+.news_letter_container input.centered_placeholder:-ms-input-placeholder {  
+   text-align: center; 
+}
+.form-inline.subscribe_form.middle{
+	
+}
+
 .pagination > li:first-child > a, .pagination > li:first-child > span{border-bottom-left-radius:0; border-top-left-radius:0}
 .pagination > li:last-child > a, .pagination > li:last-child > span{border-bottom-right-radius:0; border-top-right-radius:0}
 .pagination > li > a, .pagination > li > span{background-color:#333; border:1px solid #333; color:#fff; margin-right:2px}
@@ -350,6 +406,7 @@ section#content .slider_tittle:hover, .slider_tittle:focus{color:#fff}
 .navbar-collapse.in{margin-right: 0!important; float: right;}
 .dropdown-menu li a{font-size:14px}
 .teaser_img{/*height:250px;*/}
+.big_teaser_article,.teaser_article{padding: 0 10px 15px 10px; /*margin:-60px 30px 0*/}
 .right_sidebar .single_widget{width:100%; margin-right:0px}
 .right_sidebar .single_widget > h2{}
 .slick-slide img{width:100%}
@@ -383,9 +440,8 @@ section#content .slider_tittle:hover, .slider_tittle:focus{color:#fff}
 @media(max-width:360px ){
 .slider_tittle{font-size:16px; line-height:20px; padding:5px}
 .single_item > h2{bottom:3%}
-.teaser_article{padding:15px 10px; /*margin:-60px 30px 0*/}
 .article_title{font-size:14px; line-height:1.5em}
-.article_category > a{font-size:11px}
+.teaser_category > a,.post-meta.group > a{font-size:11px}
 .right_sidebar .custom-tabs{width:107%}
 .scrollToTop{height:40px; line-height:35px; width:40px}
 .nav-growpop div{width:300px; max-height:144px; overflow:hidden}

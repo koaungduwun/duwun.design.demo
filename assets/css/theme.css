@@ -10,16 +10,15 @@
 .search_icon i{color:#333}
 .search_bar{border:2px solid #ed7123}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background-color:#ed7123}
-.single_widget .trendiing_category a{color:#ed7123}
+.teaser_category a{color:#ed7123;}
 .post_nav figcaption a:hover{color:#ed7123}
 .catg_title:hover{color:#ed7123}
 .middle_content > h2, .featured_title{background-color:#ed7123}
 .slick-prev, .slick-next{background-color:#ed7123}
 .slick-prev:hover, .slick-next:hover{opacity:0.55}
 
-.article_category > a:hover{color:#ed7123}
+
 .article_title a{color:#000; font-weight:bold;}
-.article_title a:hover{color:#ed7123}
 .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus{background-color:#ed7123; color:#fff; border-color:#ed7123}
 .custom-tabs li a{background-color:#ed7123}
 .custom-tabs li a:hover{background-color:#ed7123; text-decoration:none !important}
