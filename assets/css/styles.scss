@@ -350,14 +350,6 @@ section .container {
 
 #main-teasers {}
 
-.big_teaser_article {
-  padding-top: 4px;
-  padding-bottom: 30px;
-    .post-meta.group {
-        border-bottom: 0;
-    }
-}
-
 #main-content {
   margin-top: 25px;
   margin-bottom: 30px;
@@ -552,6 +544,25 @@ section {
       color: #777;
     }
   }
+
+    #video-teasers {
+        margin-top: 16px;
+        padding-bottom: 50px;
+        .teasers_right{
+            @media(max-width:767px ){
+                &.row{
+                    margin: 0;
+                }
+                .teaser_item{
+                    margin: 0;
+                    padding: 0;
+                    article{
+                        padding: 4px;
+                    }
+                }
+            }
+        }
+    }    
 }
 
 .slider_tittle:focus {
@@ -579,7 +590,9 @@ section#content .slider_tittle {
 }
 
 #top-skyscraper {
+  width: 150px;
   position: absolute;
+  z-index: 2;
   right: 0;
   top: 100px;
   &.affix {
@@ -594,7 +607,7 @@ section#content .slider_tittle {
 .teasers li {
   display: inline;
   float: left;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   width: 100%;
   p {
     line-height: 1.5em;
@@ -609,7 +622,7 @@ section#content .slider_tittle {
   overflow: hidden;
   padding: 0;
   text-align: right;
-  height: 260px;
+
   > a {
     display: inline-block;
     padding: 0;
@@ -640,11 +653,28 @@ section#content .slider_tittle {
 }
 
 .teaser_article {
-  background: none repeat scroll 0 0 white;
-  float: left;
-  padding: 0 15px 15px 15px;
-  padding-left: 0;
-  position: relative;
+    background: none repeat scroll 0 0 white;
+    float: left;
+    padding: 0 15px 15px 15px;
+    padding-left: 0;
+    position: relative;
+    &.video,
+    &.big {
+      float: none;
+      padding-top: 4px;
+      padding-bottom: 30px;
+        .post-meta.group {
+            border-bottom: 0;
+            &.video{
+                padding: 0;
+                margin: 0;
+                line-height: 1.5em;
+                &.lead{
+                    line-height: 2.5em;
+                }                
+            }
+        }
+    }    
 }
 
 .post-meta.group {
@@ -658,6 +688,10 @@ section#content .slider_tittle {
   span.time, .teaser_category {
     margin-right: 4px;
   }
+    &.video{
+        line-height: 3;
+        border-bottom: 0;
+    }
   a {
     &.social_share {
       color: #999;
@@ -695,14 +729,31 @@ article span.time {
 }
 
 .article_title {
-  float: left;
-  font-size: 22px;
-  line-height: 1.3em;
-  margin-top: 11px;
-  width: 100%;
-  &.lead {
-    font-size: 24px;
-  }
+    float: left;
+    font-size: 22px;
+    line-height: 1.3em;
+    margin-top: 11px;
+    width: 100%;
+    &.lead {
+        a{        
+            font-size: 24px;       
+        }
+        &.video {
+            margin-top: 0;
+            a{
+                font-size: 30px; 
+                line-height: 1.7em;                 
+            }
+        }
+    }
+    &.video {
+        margin-top: 0;
+        margin-bottom: 1.2em;
+        a{
+            line-height: 0.6em;
+            font-size: 18px;                 
+        }
+    }      
 }
 
 .article_author {
@@ -1533,7 +1584,7 @@ article span.time {
   .teaser_img {
     /*height:250px;*/
   }
-  .big_teaser_article, .teaser_article {
+  .teaser_article {
     padding: 0 10px 15px 10px;
     /*margin:-60px 30px 0*/
   }
@@ -1672,4 +1723,79 @@ article span.time {
   .breadcrumb {
     width: 108%;
   }
+}
+.mega_teaser_container {
+    margin-top: 1em;
+    margin-bottom: 4em;
+    position: relative;
+    .img_mega_teaser{
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index:-1;        
+        @media(max-width:767px ){
+            width: 200%;
+            margin-left:-50%;
+            overflow: hidden;
+        }
+    }
+    .mega_teaser_intro_container{
+        height: 10.2em;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        width: 100%;
+        border: 0 solid transparent;        
+        
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+        
+        strong.teaser_category a,
+        h2.article_title a{
+            color: white!important;
+        }
+        strong.teaser_category a{
+            background-color: #ed7123;
+            padding: 0 4px;
+        }
+         
+        h2.article_title {
+            line-height: 2em;
+            height: 4em;             
+            overflow: hidden;
+            a{               
+                font-size: 1.2em;
+                overflow: hidden; 
+                span.inverse_breaker{
+                    font-size: 0.5em;
+                    display:inline-block;float:right;width:40%;
+                }
+            }
+            @media(max-width:767px ){
+                height: 6.1em;
+                a{
+                    font-size: 1.2em;
+                }
+            }
+            @media(max-width:480px ){
+                height: 6em;   
+                a{                 
+                    font-size: 1.1em;
+                }
+            }         
+        }        
+        @media(max-width:767px ){
+            padding: 8px;
+            height: 14em;
+        }
+        @media(max-width:480px ){
+            height: 12.5em;
+        }
+        @media(max-width:360px ){
+            height: 10.5em;
+        }
+    }
 }

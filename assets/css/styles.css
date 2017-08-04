@@ -269,12 +269,6 @@ section .container {
   .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff; }
 
-.big_teaser_article {
-  padding-top: 4px;
-  padding-bottom: 30px; }
-  .big_teaser_article .post-meta.group {
-    border-bottom: 0; }
-
 #main-content {
   margin-top: 25px;
   margin-bottom: 30px; }
@@ -429,6 +423,17 @@ section#top-teaser .slider_tittle {
   padding: 10px; }
   section#top-teaser .slider_tittle:hover {
     color: #777; }
+section #video-teasers {
+  margin-top: 16px;
+  padding-bottom: 50px; }
+  @media (max-width: 767px) {
+    section #video-teasers .teasers_right.row {
+      margin: 0; }
+    section #video-teasers .teasers_right .teaser_item {
+      margin: 0;
+      padding: 0; }
+      section #video-teasers .teasers_right .teaser_item article {
+        padding: 4px; } }
 
 .slider_tittle:focus {
   color: #777; }
@@ -450,7 +455,9 @@ section#content .slider_tittle {
   margin: 0 auto; }
 
 #top-skyscraper {
+  width: 150px;
   position: absolute;
+  z-index: 2;
   right: 0;
   top: 100px; }
   #top-skyscraper.affix {
@@ -461,7 +468,7 @@ section#content .slider_tittle {
 .teasers li {
   display: inline;
   float: left;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   width: 100%; }
   .teasers li p {
     line-height: 1.5em; }
@@ -472,8 +479,7 @@ section#content .slider_tittle {
 .teaser_img {
   overflow: hidden;
   padding: 0;
-  text-align: right;
-  height: 260px; }
+  text-align: right; }
   .teaser_img > a {
     display: inline-block;
     padding: 0;
@@ -504,6 +510,18 @@ section#content .slider_tittle {
   padding: 0 15px 15px 15px;
   padding-left: 0;
   position: relative; }
+  .teaser_article.video, .teaser_article.big {
+    float: none;
+    padding-top: 4px;
+    padding-bottom: 30px; }
+    .teaser_article.video .post-meta.group, .teaser_article.big .post-meta.group {
+      border-bottom: 0; }
+      .teaser_article.video .post-meta.group.video, .teaser_article.big .post-meta.group.video {
+        padding: 0;
+        margin: 0;
+        line-height: 1.5em; }
+        .teaser_article.video .post-meta.group.video.lead, .teaser_article.big .post-meta.group.video.lead {
+          line-height: 2.5em; }
 
 .post-meta.group {
   text-transform: uppercase;
@@ -515,6 +533,9 @@ section#content .slider_tittle {
   border-bottom: 1px dotted #333; }
   .post-meta.group span.time, .post-meta.group .teaser_category {
     margin-right: 4px; }
+  .post-meta.group.video {
+    line-height: 3;
+    border-bottom: 0; }
   .post-meta.group a.social_share {
     color: #999; }
   .post-meta.group a.sponsored_by {
@@ -548,8 +569,19 @@ article span.time {
   line-height: 1.3em;
   margin-top: 11px;
   width: 100%; }
-  .article_title.lead {
+  .article_title.lead a {
     font-size: 24px; }
+  .article_title.lead.video {
+    margin-top: 0; }
+    .article_title.lead.video a {
+      font-size: 30px;
+      line-height: 1.7em; }
+  .article_title.video {
+    margin-top: 0;
+    margin-bottom: 1.2em; }
+    .article_title.video a {
+      line-height: 0.6em;
+      font-size: 18px; }
 
 .article_author {
   text-transform: uppercase;
@@ -1206,7 +1238,7 @@ article span.time {
   .teaser_img {
     /*height:250px;*/ }
 
-  .big_teaser_article, .teaser_article {
+  .teaser_article {
     padding: 0 10px 15px 10px;
     /*margin:-60px 30px 0*/ }
 
@@ -1317,5 +1349,73 @@ article span.time {
 @media (max-width: 320px) {
   .breadcrumb {
     width: 108%; } }
+.mega_teaser_container {
+  margin-top: 1em;
+  margin-bottom: 4em;
+  position: relative; }
+  .mega_teaser_container .img_mega_teaser {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1; }
+    @media (max-width: 767px) {
+      .mega_teaser_container .img_mega_teaser {
+        width: 200%;
+        margin-left: -50%;
+        overflow: hidden; } }
+  .mega_teaser_container .mega_teaser_intro_container {
+    height: 10.2em;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    border: 0 solid transparent;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+    /* IE6-9 */ }
+    .mega_teaser_container .mega_teaser_intro_container strong.teaser_category a,
+    .mega_teaser_container .mega_teaser_intro_container h2.article_title a {
+      color: white !important; }
+    .mega_teaser_container .mega_teaser_intro_container strong.teaser_category a {
+      background-color: #ed7123;
+      padding: 0 4px; }
+    .mega_teaser_container .mega_teaser_intro_container h2.article_title {
+      line-height: 2em;
+      height: 4em;
+      overflow: hidden; }
+      .mega_teaser_container .mega_teaser_intro_container h2.article_title a {
+        font-size: 1.2em;
+        overflow: hidden; }
+        .mega_teaser_container .mega_teaser_intro_container h2.article_title a span.inverse_breaker {
+          font-size: 0.5em;
+          display: inline-block;
+          float: right;
+          width: 40%; }
+      @media (max-width: 767px) {
+        .mega_teaser_container .mega_teaser_intro_container h2.article_title {
+          height: 6.1em; }
+          .mega_teaser_container .mega_teaser_intro_container h2.article_title a {
+            font-size: 1.2em; } }
+      @media (max-width: 480px) {
+        .mega_teaser_container .mega_teaser_intro_container h2.article_title {
+          height: 6em; }
+          .mega_teaser_container .mega_teaser_intro_container h2.article_title a {
+            font-size: 1.1em; } }
+    @media (max-width: 767px) {
+      .mega_teaser_container .mega_teaser_intro_container {
+        padding: 8px;
+        height: 14em; } }
+    @media (max-width: 480px) {
+      .mega_teaser_container .mega_teaser_intro_container {
+        height: 12.5em; } }
+    @media (max-width: 360px) {
+      .mega_teaser_container .mega_teaser_intro_container {
+        height: 10.5em; } }
 
 /*# sourceMappingURL=styles.css.map */
