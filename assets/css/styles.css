@@ -199,7 +199,8 @@ img {
   #header-container .navbar-brand {
     min-height: 70px; }
   #header-container #main-navbar {
-    margin-top: 24px; }
+    padding-top: 24px;
+    background-color: #ed7123; }
     #header-container #main-navbar #navbar {
       margin-top: 10px;
       margin-right: -20px; }
@@ -208,7 +209,7 @@ img {
         padding-left: 10px;
         padding-right: 10px; }
   #header-container.affix #main-navbar {
-    margin-top: 0; }
+    padding-top: 0; }
   #header-container #main-navbar #navbar ul li a {
     text-transform: uppercase; }
 
@@ -1386,7 +1387,8 @@ article span.time {
 .mega_teaser_container {
   margin-top: 1em;
   margin-bottom: 4em;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .mega_teaser_container .img_mega_teaser {
     width: 100%;
     height: auto;
@@ -1451,5 +1453,20 @@ article span.time {
     @media (max-width: 360px) {
       .mega_teaser_container .mega_teaser_intro_container {
         height: 10.5em; } }
+
+#columnist-mega-teaser {
+  text-align: center; }
+  #columnist-mega-teaser .quote {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: bolder;
+    font-size: 100pt;
+    color: #ed7123;
+    padding-top: 0.5em; }
+  #columnist-mega-teaser .quoted-text {
+    font-size: 18px; }
+  #columnist-mega-teaser img.img-responsive {
+    width: 100%; }
+  #columnist-mega-teaser strong.author {
+    color: #ed7123; }
 
 /*# sourceMappingURL=styles.css.map */

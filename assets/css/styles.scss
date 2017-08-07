@@ -246,7 +246,8 @@ img {
     min-height: 70px;
   }
   #main-navbar {
-    margin-top: 24px;
+    padding-top: 24px;
+    background-color: #ed7123;
     #navbar {
       margin-top: 10px;
       margin-right: -20px;
@@ -258,7 +259,7 @@ img {
     }
   }
   &.affix #main-navbar {
-    margin-top: 0;
+    padding-top: 0;
   }
   #main-navbar #navbar ul li a {
     text-transform: uppercase;
@@ -1769,6 +1770,7 @@ article span.time {
     margin-top: 1em;
     margin-bottom: 4em;
     position: relative;
+    overflow:hidden;
     .img_mega_teaser{
         width: 100%;
         height: auto;
@@ -1838,5 +1840,25 @@ article span.time {
         @media(max-width:360px ){
             height: 10.5em;
         }
+    }
+}
+#columnist-mega-teaser {
+    
+    text-align: center;    
+    .quote{
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-weight: bolder;
+        font-size: 100pt;
+        color:#ed7123;
+        padding-top: 0.5em;
+    }
+    .quoted-text {
+        font-size: 18px;
+    }
+    img.img-responsive{
+        width: 100%;
+    }
+    strong.author{
+        color:#ed7123;
     }
 }
