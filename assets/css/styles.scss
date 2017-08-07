@@ -1846,11 +1846,17 @@ article span.time {
     
     text-align: center;    
     .quote{
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
         font-weight: bolder;
         font-size: 100pt;
         color:#ed7123;
         padding-top: 0.5em;
+        @media(max-width:767px ){
+            font-size: 60pt;
+        }
+        @media(max-width:480px ){
+            font-size: 40pt;
+        }        
     }
     .quoted-text {
         font-size: 18px;
