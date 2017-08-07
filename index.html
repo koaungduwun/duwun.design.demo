@@ -674,9 +674,16 @@
     
     
     <div class="row" id="video-teasers">
+        <div class="col-sm-12"><div class="teaser_caption">Video</div></div>
         <div class="col-lg-8 col-md-7 col-sm-12">
             <div class="wow fadeInDown">      
+                <!--
                 <figure class="video_teaser_img"><a class="" href="#"><img src="images/video-teasers/Video-teaser-730x370.jpg" alt="" class="img-responsive"></a></figure>
+                -->
+     <div class="playerbox">
+        <video id="video_1" style="width: 100%; height: 400px;" data-video-id="4093643993001" data-account="1752604059001" data-player="Nynfq6Yde" data-embed="default" class="video-js" controls=""></video>
+        <script src="//players.brightcove.net/1752604059001/Nynfq6Yde_default/index.min.js"></script>
+     </div>                
                 <article class="video teaser_article">
                 <div class="post-meta group lead video">
                 <strong class="teaser_category video"><a href="#">Movie & Music</a></strong>
@@ -688,7 +695,13 @@
         <div class="col-lg-4 col-md-5 col-sm-12">
             <div class="row teasers_right">
                 <div class="teaser_item col-md-12 col-sm-6 col-xs-6">
+     <div class="playerbox">
+        <video id="video_2" style="width: 100%; height: 180px;" data-video-id="4454620112001" data-account="1752604059001" data-player="Nynfq6Yde" data-embed="default" class="video-js" controls=""></video>
+        <script src="//players.brightcove.net/1752604059001/Nynfq6Yde_default/index.min.js"></script>
+     </div>                    
+                    <!--
                     <figure class="video_teaser_img"><a class="" href="#"><img src="images/video-teasers/Video-teaser-_05.jpg" alt="" class="img-responsive"></a></figure>
+                    -->
                     <article class="teaser_article video">
                     <div class="post-meta group video">
                     <strong class="teaser_category video"><a href="#">Lifestyle</a></strong>
@@ -696,8 +709,14 @@
                     <h2 class="article_title video"><a href="pages/single_page.html">Miss Myanmar World 2016 ျမတ္သီရိလြင္</a></h2>
                     </article>        
                 </div>
-                <div class="teaser_item col-md-12 col-sm-6 col-xs-6">      
+                <div class="teaser_item col-md-12 col-sm-6 col-xs-6">   
+     <div class="playerbox">
+        <video id="video_3" style="width: 100%; height: 180px;" data-video-id="4029697544001" data-account="1752604059001" data-player="Nynfq6Yde" data-embed="default" class="video-js" controls=""></video>
+        <script src="//players.brightcove.net/1752604059001/Nynfq6Yde_default/index.min.js"></script>
+     </div>                    
+                    <!--
                     <figure class="video_teaser_img"><a class="" href="#"><img src="images/video-teasers/Video-teaser-_08.jpg" alt="" class="img-responsive"></a></figure>
+                    -->
                     <article class="teaser_article video">
                     <div class="post-meta group video">
                     <strong class="teaser_category video"><a href="#">Movie & Music</a></strong>
@@ -707,6 +726,41 @@
                 </div>
             </div>
         </div>
+<script type="text/javascript">
+
+  // create array for player IDs
+  var players = [];
+  // determine the available player IDs
+  for (x = 0; x < Object.keys(videojs.players).length; x++) {
+    // assign the player to setPlayer
+    var setPlayer = Object.keys(videojs.players)[x];
+    // define the ready event for the player
+    videojs(setPlayer).ready(function () {
+      // assign this player to a variable
+      player = this;
+      // assign and event listener for play event
+      player.on('play', onPlay);
+      // push the player to the players array
+      players.push(player);
+    });
+  }
+  // event listener callback function
+  function onPlay(e) {
+    // determine which player the event is coming from
+    var id = e.target.id;
+    // go through the array of players
+    for (var i = 0; i < players.length; i++) {
+      // get the player(s) that did not trigger the play event
+      if (players[i].id() != id) {
+        //log the players that were paused
+        //console.log(players[i].id());
+        // pause the other player(s)
+        videojs(players[i].id()).pause();
+      }
+    }
+  }
+
+</script>        
     </div>
 
     
