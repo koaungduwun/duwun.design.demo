@@ -1,4 +1,8 @@
 jQuery(document).ready(function () {
+
+    $( "img" ).on( "error", function() {
+        $( this ).attr( "src", "../../images/duwun-no-image-540x265.png" );
+    });
     // for hover dropdown menu
     $('ul.nav li.dropdown').hover(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
@@ -29,18 +33,18 @@ jQuery(document).ready(function () {
                 dots: true
             }
         }, {
-            breakpoint: 600,
+            breakpoint: 767,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
-				dots: false
+				dots: true
             }
         }, {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-				dots: false
+				dots: true
             }
         }]
     });
@@ -78,6 +82,34 @@ jQuery(document).ready(function () {
         // instead of a settings object
       ]        
     });
+    
+    /*
+    $('.columnist_slick').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      infinite: true,
+      autoplaySpeed: 2000,
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: "unslick"
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]        
+    }); 
+    */
     
     //Check to see if the window is top if not then display button
     jQuery(window).scroll(function () {
