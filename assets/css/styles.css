@@ -11,7 +11,11 @@
   font-family: 'Zawgyi-One';
   src: url("https://mmwebfonts.comquas.com/fonts/zawgyi.woff") format("woff"), url("https://mmwebfonts.comquas.com/fonts/zawgyi.ttf") format("ttf"); }
 body, h1, h2, h3, h4, h5, h6, a, p, #main-content small, strong, em, input, button {
-  font-family: Zawgyi-One, Arial, Helvetica, sans-serif; }
+  font-family: Zawgyi-One, 'Fira Sans', Arial, Helvetica, sans-serif; }
+
+.teaser_category a {
+  font-family: 'Fira Sans', Zawgyi-One, Arial, Helvetica;
+  font-style: normal; }
 
 body {
   background-color: #fff;
@@ -573,6 +577,10 @@ section#content .slider_tittle {
   border-bottom: 1px dotted #333; }
   .post-meta.group span.time, .post-meta.group .teaser_category {
     margin-right: 4px; }
+  .post-meta.group .teaser_category a {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px; }
   .post-meta.group.video {
     line-height: 3;
     border-bottom: 0; }
