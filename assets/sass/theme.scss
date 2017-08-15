@@ -2,7 +2,7 @@ $primary-color: #ed7123;
 
 .scrollToTop {
   background-color: $primary-color;
-  color: #fff;
+  color: #ffffff;
   &:hover, &:focus {
     background-color: #fff;
     color: $primary-color;
@@ -190,20 +190,16 @@ $primary-color: #ed7123;
   color: $primary-color;
 }
 
-/*Viber Filled icon by Icons8 */
+/*Filled icon by Icons8 */
 
-.icons8-Facebook-Messenger-Filled {
+.icons8-Facebook-Messenger-Default {
   /* Customizes Facebook Messenger Filled icon */
-  fill: #333;
-  height: 20px;
-  width: 20px;
+  fill: #00aaff;
 }
 
-.icons8-Viber-Filled {
+.icons8-Viber-Default {
   /* Customizes Viber Filled icon */
-  fill: #333;
-  height: 20px;
-  width: 20px;
+  fill: #7f60cf;
 }
 
 .icon8-a {
