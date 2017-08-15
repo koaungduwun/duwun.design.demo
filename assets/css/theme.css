@@ -212,30 +212,30 @@
 }
 
 /*Filled icon by Icons8 */
-/* line 195, ../sass/theme.scss */
+/* line 194, ../sass/theme.scss */
 .icons8-Facebook-Messenger-Default {
   /* Customizes Facebook Messenger Filled icon */
   fill: #00aaff;
 }
 
-/* line 200, ../sass/theme.scss */
+/* line 199, ../sass/theme.scss */
 .icons8-Viber-Default {
   /* Customizes Viber Filled icon */
   fill: #7f60cf;
 }
 
-/* line 205, ../sass/theme.scss */
+/* line 204, ../sass/theme.scss */
 .icon8-a {
   line-height: 10px !important;
 }
 
-/* line 209, ../sass/theme.scss */
+/* line 208, ../sass/theme.scss */
 .icon8 {
   /* Customizes all icons at once */
   display: inline-block;
 }
 
-/* line 215, ../sass/theme.scss */
+/* line 214, ../sass/theme.scss */
 i.fa.fa-temp-messenger-color::before, i.fa.fa-temp-messenger-filled::before {
   content: "";
   display: inline-block;
@@ -244,11 +244,11 @@ i.fa.fa-temp-messenger-color::before, i.fa.fa-temp-messenger-filled::before {
   position: relative;
   top: 1px;
 }
-/* line 223, ../sass/theme.scss */
+/* line 222, ../sass/theme.scss */
 i.fa.fa-temp-messenger-color::before {
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9IiMwMDAiID48cGF0aCBmaWxsPSIjNDQ4QUZGIiBkPSJNMjQsNEMxMy41LDQsNSwxMi4xLDUsMjJjMCw1LjIsMi4zLDkuOCw2LDEzLjFWNDRsNy44LTQuN2MxLjYsMC40LDMuNCwwLjcsNS4yLDAuN2MxMC41LDAsMTktOC4xLDE5LTE4CUM0MywxMi4xLDM0LjUsNCwyNCw0eiI+PC9wYXRoPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTIsMjggMjIsMTcgMjcsMjIgMzYsMTcgMjYsMjggMjEsMjMgIj48L3BvbHlnb24+PC9zdmc+") no-repeat scroll center center/100%;
 }
-/* line 226, ../sass/theme.scss */
+/* line 225, ../sass/theme.scss */
 i.fa.fa-temp-messenger-filled::before {
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTAgNTAiIGZpbGw9IiMwMDAiID4gICAgPHBhdGggZD0iTTI1LDJDMTIuMywyLDIsMTEuNiwyLDIzLjVjMCw2LjMsMi45LDEyLjIsOCwxNi4zdjguOGw4LjYtNC41YzIuMSwwLjYsNC4yLDAuOCw2LjQsMC44YzEyLjcsMCwyMy05LjYsMjMtMjEuNSBDNDgsMTEuNiwzNy43LDIsMjUsMnogTTI3LjMsMzAuNmwtNS44LTYuMmwtMTAuOCw2LjFsMTItMTIuN2w1LjksNS45bDEwLjUtNS45TDI3LjMsMzAuNnoiPjwvcGF0aD48L3N2Zz4=") no-repeat scroll center center/100%;
 }

@@ -312,24 +312,38 @@ table {
     #navbar {
       margin-top: 10px;
       margin-right: -20px;
-      ul.navbar-right.navbar-nav > li > a {
-        font-size: 18px;
-        padding-left: 10px;
-        padding-right: 10px;
-      }
+      ul{
+          &.navbar-right.navbar-nav > li > a {
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }    
+          li a {
+              text-transform: uppercase;
+              &.duwun-menu-tv{
+                background-color: black;
+                border-radius: 4px;
+                color: white;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 20px;
+                padding: 2px 8px 0 8px;
+                margin-top: 12px;
+                  &:hover{
+                      background-color: #333;
+                  }
+              }              
+          }
+      }      
     }
   }
   &.affix #main-navbar {
     padding-top: 0;
   }
-  #main-navbar #navbar ul li a {
-    text-transform: uppercase;
-  }
 }
 
 section .container {
   max-width: 1038px;
-  // padding: 0;
 }
 
 .navbar {
@@ -2027,8 +2041,6 @@ article span.time {
     }
   }
 }
-
-
 
 @media (min-width: 1440px) {
   #main-navbar .container {
