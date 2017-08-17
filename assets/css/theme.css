@@ -63,7 +63,7 @@
 }
 
 /* line 60, ../sass/theme.scss */
-.teaser_category a, .post_nav figcaption a:hover, .catg_title:hover {
+.article_category a, .teaser_category a, .post_nav figcaption a:hover, .catg_title:hover {
   color: #ed7123;
 }
 
@@ -215,13 +215,13 @@
 /* line 194, ../sass/theme.scss */
 .icons8-Facebook-Messenger-Default {
   /* Customizes Facebook Messenger Filled icon */
-  fill: #00aaff;
+  fill: #0084ff;
 }
 
 /* line 199, ../sass/theme.scss */
 .icons8-Viber-Default {
   /* Customizes Viber Filled icon */
-  fill: #7f60cf;
+  fill: #7b4e9f;
 }
 
 /* line 204, ../sass/theme.scss */
@@ -252,3 +252,49 @@ i.fa.fa-temp-messenger-color::before {
 i.fa.fa-temp-messenger-filled::before {
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTAgNTAiIGZpbGw9IiMwMDAiID4gICAgPHBhdGggZD0iTTI1LDJDMTIuMywyLDIsMTEuNiwyLDIzLjVjMCw2LjMsMi45LDEyLjIsOCwxNi4zdjguOGw4LjYtNC41YzIuMSwwLjYsNC4yLDAuOCw2LjQsMC44YzEyLjcsMCwyMy05LjYsMjMtMjEuNSBDNDgsMTEuNiwzNy43LDIsMjUsMnogTTI3LjMsMzAuNmwtNS44LTYuMmwtMTAuOCw2LjFsMTItMTIuN2w1LjksNS45bDEwLjUtNS45TDI3LjMsMzAuNnoiPjwvcGF0aD48L3N2Zz4=") no-repeat scroll center center/100%;
 }
+
+/* CSS "Crop" Image, by codepen.io/KristinB */
+/* line 233, ../sass/theme.scss */
+.frame-square, .frame-round {
+  background: #fff;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 245, ../sass/theme.scss */
+.frame-round {
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* line 250, ../sass/theme.scss */
+.frame-round .crop {
+  border-radius: 50%;
+}
+
+/* line 253, ../sass/theme.scss */
+.crop {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 259, ../sass/theme.scss */
+.crop img {
+  height: 100%;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  margin: auto;
+  position: absolute;
+  top: -100%;
+  right: -100%;
+  bottom: -100%;
+  left: -100%;
+}
+
+/*
+.retina .crop img {
+  transform: scale(.5, .5);
+}
+*/
+/* End CSS "crop" Image */
