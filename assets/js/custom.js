@@ -1,18 +1,4 @@
 jQuery(document).ready(function () {
-
-    $( "img" ).each(function() {
-        if((typeof this.naturalWidth != "undefined" &&
-            this.naturalWidth == 0 ) 
-            || this.readyState == 'uninitialized' ) {
-            $(this).attr('src', 'images/duwun-no-image-540x265.png');
-        }  
-        /*
-        $(this).on( "error", function() {
-            alert('found img err');        
-            //$( this ).attr( "src", "images/duwun-no-image-540x265.png" );
-        });
-        */
-    });
     
     /*
     $('.navbar-collapse').on('shown.bs.collapse', function() { alert('shown'); });
@@ -185,4 +171,19 @@ jQuery(window).load(function () { // makes sure the whole site is loaded
     $('body').delay(100).css({
         'overflow': 'visible'
     }); 
+    
+
+    $( "img" ).each(function() {
+        if((typeof this.naturalWidth != "undefined" &&
+            this.naturalWidth == 0 ) 
+            || this.readyState == 'uninitialized' ) {
+            $(this).attr('src', 'images/duwun-no-image-540x265.png');
+        }  
+        /*
+        $(this).on( "error", function() {
+            alert('found img err');        
+            //$( this ).attr( "src", "images/duwun-no-image-540x265.png" );
+        });
+        */
+    });    
 });
