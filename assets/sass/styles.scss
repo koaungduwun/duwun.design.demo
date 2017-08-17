@@ -632,6 +632,7 @@ body {
 
 .horizontal_banner_ads {
     //height: 90px;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -1151,6 +1152,20 @@ section {
             height: 100%;
             width: 100%;
         }
+    }    
+}
+
+.teaser_category {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 1.3em;
+    &.bold {
+        font-size: 2em!important;
+        font-weight: 700!important;
+    }
+    &.bolder {
+        font-size: 2em!important;
+        font-weight: 900!important;
     }    
 }
 

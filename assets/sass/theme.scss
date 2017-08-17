@@ -43,6 +43,22 @@ $primary-color: #ed7123;
   }
 }
 
+.modal {
+   top: 20%;
+    ul.share-buttons {
+        text-align: center;
+        li {
+            display: inline-block;
+            min-width: 50px;
+            text-align: center;
+            .fa {
+                font-size: 30px;
+                padding: 8px;
+            }            
+        }
+    }
+}
+
 .search_icon i {
   color: #333;
 }
