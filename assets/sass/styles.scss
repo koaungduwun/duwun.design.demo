@@ -334,10 +334,12 @@ table {
             padding-bottom: 0;
             
             .container {
-                .nav_search_form_wrapper form#nav_search_form .search_bar {
-                    @media (max-width: 767px) {
-                        border-width: 12px!important;
-                        height: 66px;
+                .nav_search_form_wrapper form#nav_search_form {
+                    .search_bar {
+                        @media (max-width: 767px) {
+                            border-width: 12px!important;
+                            height: 66px;
+                        }
                     }
                 }
                 .navbar-header .nav_main_search {
@@ -349,11 +351,17 @@ table {
     
     &.affix-top {
         #main-navbar {
-            
-        }        
-        .navbar-header .nav_main_search {
-            top: 30px; 
-        }           
+            .container {
+                .nav_search_form_wrapper form#nav_search_form {
+                    @media (max-width: 767px) {
+                        top: -83px;
+                    }
+                }
+                .navbar-header .nav_main_search {
+                    top: 30px; 
+                }                   
+            }         
+        }         
     }
 
     #main-navbar {
@@ -395,7 +403,18 @@ table {
                 @media (max-width: 991px) {
                     width: 100%;
                 }
-                //&.in {
+                &.in {
+                    ul.navbar-right > li > a > i.fa {
+                        font-size: 30px;
+                    }
+                    a.icon8-a {
+                        .svg.icons8-Facebook-Messenger-Filled,
+                        .svg.icons8-Viber-Filled {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+                }
                 @media (max-width: 767px) {
                         margin-right: 0 !important;
                         float: right;
@@ -411,14 +430,16 @@ table {
             .nav_search_form_wrapper {
                 position: relative;
                 float:left;
+                @media(max-width: 767px) {
+                    float:none;
+                }                
                 
                 form#nav_search_form {
                     display: none;
                     .search_bar {
                         position: relative;
-                        //float: none;
                         margin: 0 auto;
-                        padding: 0;
+                        padding: 0 8px;
                         width: 100%;                    
                         height: 45px; 
 
@@ -434,12 +455,16 @@ table {
                         }
                     }
                     @media (max-width: 767px) {
-                        position: fixed;
+                        //position: fixed;
+                        //top: 4px;
+                        
                         width: 70%;
                         height: 80%;
                         margin-top: 0;
                         margin-left: 0;
-                        top: 4px;
+                        
+                        position: absolute;
+                        top: -68px;
                         left: 15%;
                         text-align: center;                  
                     }
@@ -669,16 +694,42 @@ body {
             font-size: 15px;
         }
     }
+    &#dw-page-category {
+        .row_category_meta {
+            .sponsor_wrapper {
+                margin-bottom: -3em;
+                padding-top: 1em;
+                img {
+                    padding-left: 0.2em;
+                }
+            }
+            .sub_menu_wrapper {
+                margin-bottom: 2em;
+                font-size: 20px;
+                >ul > li{
+                    padding: 0 24px;
+                }
+            }
+        }
+    }
 }
 
 #main-teasers {}
 
 #main-content {
     margin-bottom: 30px;
+    h1.category_heading a,
     .dw-widget.trending h2 {
         //@include theme-font($font-stack-default, 700, 20px, normal);
         font-family: 'Ubuntu', $font-stack-default; //"Lucida Grande", "Lucida Sans Unicode", sans-serif;
-        font-weight: 700;
+        font-weight: 900;
+
+    }
+    h1.category_heading a {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+    .dw-widget.trending h2 {
         line-height: 1.7em;
     }
     .teaser_category,

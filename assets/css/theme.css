@@ -63,7 +63,7 @@
 }
 
 /* line 63, ../sass/theme.scss */
-.dw-readmore, .article_category a, .teaser_category a {
+.dw-readmore, .category_heading a, .article_category a, .teaser_category a {
   color: #ed7123;
 }
 
