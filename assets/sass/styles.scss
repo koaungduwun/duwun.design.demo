@@ -1823,7 +1823,7 @@ ul.article_page_teasers {
 }
 
 .mega_teaser_container {
-    margin-top: 1em;
+    margin-top: 0;
     margin-bottom: 4em;
     position: relative;
     overflow: hidden;
@@ -2269,6 +2269,19 @@ i.fa {
     }
 }
 
+.parallax { 
+    /* The image used */
+    //background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    //height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center -150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 @media (max-width: 1199px) {

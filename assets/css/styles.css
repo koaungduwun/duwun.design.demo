@@ -2101,7 +2101,7 @@ body#dw-article-page .article_inline_teaser article.teaser_article .sponsored_by
 
 /* line 1825, ../sass/styles.scss */
 .mega_teaser_container {
-  margin-top: 1em;
+  margin-top: 0;
   margin-bottom: 4em;
   position: relative;
   overflow: hidden;
@@ -2626,42 +2626,53 @@ i.fa.fa-temp-messenger-filled::before {
   color: #ccc;
 }
 
+/* line 2272, ../sass/styles.scss */
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center -150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 1199px) {
-  /* line 2276, ../sass/styles.scss */
+  /* line 2289, ../sass/styles.scss */
   .footer_widget > h2 {
     font-size: 16px;
   }
 }
 @media (max-width: 991px) {
-  /* line 2283, ../sass/styles.scss */
+  /* line 2296, ../sass/styles.scss */
   .navbar-default .navbar-nav > li > a {
     font-size: 12px;
   }
 }
 @media (max-width: 767px) {
-  /* line 2290, ../sass/styles.scss */
+  /* line 2303, ../sass/styles.scss */
   .navbar-default .navbar-nav > li > a {
     font-size: 14px;
   }
 
-  /* line 2293, ../sass/styles.scss */
+  /* line 2306, ../sass/styles.scss */
   .slick-slide img {
     width: 100%;
   }
 }
 @media (max-width: 360px) {
-  /* line 2300, ../sass/styles.scss */
+  /* line 2313, ../sass/styles.scss */
   .single_item > h2 {
     bottom: 3%;
   }
 
-  /* line 2303, ../sass/styles.scss */
+  /* line 2316, ../sass/styles.scss */
   .teaser_category > a,
   .post-meta.group > a {
     font-size: 11px;
   }
 
-  /* line 2307, ../sass/styles.scss */
+  /* line 2320, ../sass/styles.scss */
   .scrollToTop {
     height: 40px;
     line-height: 35px;
