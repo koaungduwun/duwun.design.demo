@@ -246,7 +246,7 @@ table.borderless tr > th {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 99;
 }
 
@@ -2775,18 +2775,18 @@ i.fa.fa-temp-messenger-filled::before {
   }
 }
 @media (max-width: 360px) {
-  /* line 2405, ../sass/styles.scss */
+  /* line 2404, ../sass/styles.scss */
   .single_item > h2 {
     bottom: 3%;
   }
 
-  /* line 2408, ../sass/styles.scss */
+  /* line 2407, ../sass/styles.scss */
   .teaser_category > a,
   .post-meta.group > a {
     font-size: 11px;
   }
 
-  /* line 2412, ../sass/styles.scss */
+  /* line 2411, ../sass/styles.scss */
   .scrollToTop {
     height: 40px;
     line-height: 35px;

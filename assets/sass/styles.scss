@@ -275,7 +275,7 @@ table {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.5);
     z-index: 99;
 }
 
@@ -2401,7 +2401,6 @@ i.fa {
 }
 
 @media (max-width: 360px) {
-
     .single_item>h2 {
         bottom: 3%;
     }
