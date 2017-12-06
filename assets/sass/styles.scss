@@ -2296,6 +2296,7 @@ i.fa {
     margin-top: 3em;
     margin-bottom: 3em;
     img {
+    
         margin: 0 auto;
     }
 }
@@ -2414,4 +2415,21 @@ i.fa {
         width: 40px;
     }
 
+}
+//MTK start
+.img_center{
+    text-align: center;
+    img{
+        width:300px;
+    }
+}
+.article_date{
+    width:300px;
+   margin: 0 auto;
+    .fa{
+        color:#ed7123;
+    }
+}
+.teaser_para{
+    padding-top:15px;
 }

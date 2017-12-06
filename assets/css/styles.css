@@ -2664,31 +2664,31 @@ i.fa.fa-temp-messenger-filled::before {
 }
 
 @media (max-width: 991px) {
-  /* line 2302, ../sass/styles.scss */
+  /* line 2303, ../sass/styles.scss */
   .non_mobile_widget {
     display: none;
   }
 }
 
-/* line 2307, ../sass/styles.scss */
+/* line 2308, ../sass/styles.scss */
 .slick-prev:hover, .slick-next:hover {
   opacity: 0.55;
 }
 
-/* line 2311, ../sass/styles.scss */
+/* line 2312, ../sass/styles.scss */
 .modal {
   top: 20%;
 }
 
-/* line 2315, ../sass/styles.scss */
+/* line 2316, ../sass/styles.scss */
 .social_nav {
   text-align: center;
 }
-/* line 2317, ../sass/styles.scss */
+/* line 2318, ../sass/styles.scss */
 .social_nav li {
   display: inline-block;
 }
-/* line 2319, ../sass/styles.scss */
+/* line 2320, ../sass/styles.scss */
 .social_nav li a {
   color: #fff;
   display: inline-block;
@@ -2698,7 +2698,7 @@ i.fa.fa-temp-messenger-filled::before {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 2327, ../sass/styles.scss */
+/* line 2328, ../sass/styles.scss */
 .social_nav li a:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -2706,41 +2706,41 @@ i.fa.fa-temp-messenger-filled::before {
   -os-transform: scale(1.2);
   transform: scale(1.2);
 }
-/* line 2335, ../sass/styles.scss */
+/* line 2336, ../sass/styles.scss */
 .social_nav li:nth-child(1) > a {
   background: none repeat scroll 0 0 #3b5998;
   padding: 8px 15px;
 }
-/* line 2339, ../sass/styles.scss */
+/* line 2340, ../sass/styles.scss */
 .social_nav li:nth-child(2) > a {
   background: none repeat scroll 0 0 #00acee;
 }
-/* line 2342, ../sass/styles.scss */
+/* line 2343, ../sass/styles.scss */
 .social_nav li:nth-child(3) > a {
   background: none repeat scroll 0 0 #dd4b39;
 }
-/* line 2345, ../sass/styles.scss */
+/* line 2346, ../sass/styles.scss */
 .social_nav li:nth-child(4) > a {
   background: none repeat scroll 0 0 #0e76a8;
 }
-/* line 2348, ../sass/styles.scss */
+/* line 2349, ../sass/styles.scss */
 .social_nav li:nth-child(5) > a {
   background: none repeat scroll 0 0 #c92228;
 }
 
-/* line 2354, ../sass/styles.scss */
+/* line 2355, ../sass/styles.scss */
 .copyright {
   float: left;
   font-size: 12px;
   letter-spacing: 0.5px;
   width: 50%;
 }
-/* line 2359, ../sass/styles.scss */
+/* line 2360, ../sass/styles.scss */
 .copyright a {
   color: #ccc;
 }
 
-/* line 2364, ../sass/styles.scss */
+/* line 2365, ../sass/styles.scss */
 .parallax {
   /* The image used */
   /* Set a specific height */
@@ -2752,44 +2752,67 @@ i.fa.fa-temp-messenger-filled::before {
 }
 
 @media (max-width: 1199px) {
-  /* line 2381, ../sass/styles.scss */
+  /* line 2382, ../sass/styles.scss */
   .footer_widget > h2 {
     font-size: 16px;
   }
 }
 @media (max-width: 991px) {
-  /* line 2388, ../sass/styles.scss */
+  /* line 2389, ../sass/styles.scss */
   .navbar-default .navbar-nav > li > a {
     font-size: 12px;
   }
 }
 @media (max-width: 767px) {
-  /* line 2395, ../sass/styles.scss */
+  /* line 2396, ../sass/styles.scss */
   .navbar-default .navbar-nav > li > a {
     font-size: 14px;
   }
 
-  /* line 2398, ../sass/styles.scss */
+  /* line 2399, ../sass/styles.scss */
   .slick-slide img {
     width: 100%;
   }
 }
 @media (max-width: 360px) {
-  /* line 2404, ../sass/styles.scss */
+  /* line 2405, ../sass/styles.scss */
   .single_item > h2 {
     bottom: 3%;
   }
 
-  /* line 2407, ../sass/styles.scss */
+  /* line 2408, ../sass/styles.scss */
   .teaser_category > a,
   .post-meta.group > a {
     font-size: 11px;
   }
 
-  /* line 2411, ../sass/styles.scss */
+  /* line 2412, ../sass/styles.scss */
   .scrollToTop {
     height: 40px;
     line-height: 35px;
     width: 40px;
   }
+}
+/* line 2420, ../sass/styles.scss */
+.img_center {
+  text-align: center;
+}
+/* line 2422, ../sass/styles.scss */
+.img_center img {
+  width: 300px;
+}
+
+/* line 2426, ../sass/styles.scss */
+.article_date {
+  width: 300px;
+  margin: 0 auto;
+}
+/* line 2429, ../sass/styles.scss */
+.article_date .fa {
+  color: #ed7123;
+}
+
+/* line 2433, ../sass/styles.scss */
+.teaser_para {
+  padding-top: 15px;
 }
