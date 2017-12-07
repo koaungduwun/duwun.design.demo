@@ -1305,13 +1305,13 @@ section .dw-widget-teasers-video .playerbox .video-js button.vjs-big-play-button
   width: 150px;
   position: absolute;
   z-index: 2;
-  right: 0;
+  right: 16px;
   top: 100px;
 }
 /* line 1180, ../sass/styles.scss */
 #top-skyscraper.affix {
   position: fixed !important;
-  right: 0;
+  right: 16px;
   top: 100px;
 }
 @media (max-width: 1320px) {
@@ -2019,7 +2019,6 @@ body#dw-article-page .article_inline_teaser article.teaser_article .sponsored_by
 /* line 1769, ../sass/styles.scss */
 .columnist_container .columnist_slick {
   margin-bottom: 0;
-  float: right;
   overflow: hidden;
 }
 @media (min-width: 992px) {
@@ -2847,7 +2846,7 @@ i.fa.fa-temp-messenger-filled::before {
 
 @media (min-width: 992px) {
   /* line 2481, ../sass/styles.scss */
-  .slick_slider:not(.slick-initialized) .single_item {
+  .slick_slider:not(.slick-initialized) .single_item, .sponsors_slick:not(.slick-initialized) .single_item, .columnist_slick:not(.slick-initialized) .single_item {
     position: relative;
     float: left;
     display: inline-block;
@@ -2855,7 +2854,7 @@ i.fa.fa-temp-messenger-filled::before {
     width: 180px;
   }
   /* line 2488, ../sass/styles.scss */
-  .slick_slider:not(.slick-initialized) .single_item img {
+  .slick_slider:not(.slick-initialized) .single_item img, .sponsors_slick:not(.slick-initialized) .single_item img, .columnist_slick:not(.slick-initialized) .single_item img {
     border: 1px solid white;
     border-top: 0;
   }

@@ -1175,11 +1175,11 @@ section {
     width: 150px;
     position: absolute;
     z-index: 2;
-    right: 0;
+    right: 16px;
     top: 100px;
     &.affix {
         position: fixed !important;
-        right: 0;
+        right: 16px;
         top: 100px;
     }
     @media (max-width: 1320px) {
@@ -1768,7 +1768,7 @@ ul.article_page_teasers {
     }
     .columnist_slick {
         margin-bottom: 0;
-        float: right;
+        //float: right;
         overflow: hidden;
         .columnist-item {
             .columnist-teaser-img {
@@ -2475,7 +2475,7 @@ i.fa {
     padding-top: 20px;
 }
 
-.slick_slider{
+.slick_slider, .sponsors_slick, .columnist_slick{
     &:not(.slick-initialized) {
         @media (min-width: 992px) {
             .single_item {
