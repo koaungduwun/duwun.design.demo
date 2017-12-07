@@ -1305,13 +1305,13 @@ section .dw-widget-teasers-video .playerbox .video-js button.vjs-big-play-button
   width: 150px;
   position: absolute;
   z-index: 2;
-  right: 0;
+  right: 16px;
   top: 100px;
 }
 /* line 1180, ../sass/styles.scss */
 #top-skyscraper.affix {
   position: fixed !important;
-  right: 0;
+  right: 16px;
   top: 100px;
 }
 @media (max-width: 1320px) {
@@ -2019,7 +2019,6 @@ body#dw-article-page .article_inline_teaser article.teaser_article .sponsored_by
 /* line 1769, ../sass/styles.scss */
 .columnist_container .columnist_slick {
   margin-bottom: 0;
-  float: right;
   overflow: hidden;
 }
 @media (min-width: 992px) {
@@ -2826,7 +2825,7 @@ i.fa.fa-temp-messenger-filled::before {
   text-align: center;
 }
 /* line 2461, ../sass/styles.scss */
-.img_center img {
+.img_center .banner_ads_wapper_img {
   width: 300px;
 }
 
@@ -2847,16 +2846,38 @@ i.fa.fa-temp-messenger-filled::before {
 
 @media (min-width: 992px) {
   /* line 2481, ../sass/styles.scss */
-  .slick_slider:not(.slick-initialized) .single_item {
+  .slick_slider:not(.slick-initialized) .single_item, .sponsors_slick:not(.slick-initialized) .single_item, .columnist_slick:not(.slick-initialized) .single_item {
     position: relative;
     float: left;
     display: inline-block;
     text-align: center;
-    width: 150px;
+    width: 180px;
   }
   /* line 2488, ../sass/styles.scss */
-  .slick_slider:not(.slick-initialized) .single_item img {
+  .slick_slider:not(.slick-initialized) .single_item img, .sponsors_slick:not(.slick-initialized) .single_item img, .columnist_slick:not(.slick-initialized) .single_item img {
     border: 1px solid white;
     border-top: 0;
   }
+}
+
+/* line 2497, ../sass/styles.scss */
+.ads_center {
+  margin: 0 auto;
+}
+
+/* line 2501, ../sass/styles.scss */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* line 2505, ../sass/styles.scss */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+/* line 2510, ../sass/styles.scss */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
