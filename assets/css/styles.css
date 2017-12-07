@@ -1302,7 +1302,7 @@ section .dw-widget-teasers-video .playerbox .video-js button.vjs-big-play-button
 
 /* line 1174, ../sass/styles.scss */
 #top-skyscraper {
-  width: 150px;
+  width: 160px;
   position: absolute;
   z-index: 2;
   right: 16px;
@@ -2861,7 +2861,7 @@ i.fa.fa-temp-messenger-filled::before {
 }
 
 /* line 2497, ../sass/styles.scss */
-.ads_center {
+.ads_center > div {
   margin: 0 auto;
 }
 
