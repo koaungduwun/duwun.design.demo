@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset='utf-8'>
     <title>listing directory /dfp-tags/</title>
     <style>
@@ -105,6 +105,15 @@
         ul#files li {
             padding: 0;
         }
+        
+        ul#files li.heading {
+            display: block;
+            width: 100%;
+            float: none;
+            clear: both;
+            padding-top: 1em;
+            font-weight: bolder;
+        }        
 
         ul#files li img {
             position: absolute;
@@ -127,6 +136,7 @@
             border-radius: 5px;
             overflow: hidden;
             text-overflow: ellipsis;
+            border-bottom: 1px dotted gray;
         }
 
         ul#files li a.icon {
@@ -229,7 +239,7 @@
                 var text = link.textContent;
 
                 if ('..' == text) return;
-                if (str.length && ~text.indexOf(str)) {
+                if (str.length && ~text.toLowerCase().indexOf(str.toLowerCase())) {
                     link.addClass('highlight');
                 } else {
                     link.removeClass('highlight');
@@ -249,40 +259,45 @@
         <h1><a href=""></a> / <a href="/dfp-tags">dfp-tags</a> / <a href="/dfp-tags/"></a></h1>
         <ul id="files">
 
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Education_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Education_Bottom_650x90.html">Duwun_Desktop_New_Template_Education_Bottom_650x90.html</a></li>
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Education_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Education_Middle_650x90.html">Duwun_Desktop_New_Template_Education_Middle_650x90.html</a></li>
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Education_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Education_Top_980x280.html">Duwun_Desktop_New_Template_Education_Top_980x280.html</a></li>
-
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Entertainment_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Entertainment_Bottom_650x90.html">Duwun_Desktop_New_Template_Entertainment_Bottom_650x90.html</a></li>
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Entertainment_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Entertainment_Middle_650x90.html">Duwun_Desktop_New_Template_Entertainment_Middle_650x90.html</a></li>
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Entertainment_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Entertainment_Top_980x280.html">Duwun_Desktop_New_Template_Entertainment_Top_980x280.html</a></li>
-            
-            
+            <li class="heading">Home</li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Home_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Home_Bottom_650x90.html">Duwun_Desktop_New_Template_Home_Bottom_650x90.html</a></li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Home_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Home_Middle_650x90.html">Duwun_Desktop_New_Template_Home_Middle_650x90.html</a></li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Home_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Home_Top_980x280.html">Duwun_Desktop_New_Template_Home_Top_980x280.html</a></li>
-            
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Lifestyle_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Lifestyle_Bottom_650x90.html">Duwun_Desktop_New_Template_Lifestyle_Bottom_650x90.html</a></li>
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Lifestyle_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Lifestyle_Middle_650x90.html">Duwun_Desktop_New_Template_Lifestyle_Middle_650x90.html</a></li>
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Lifestyle_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Lifestyle_Top_980x280.html">Duwun_Desktop_New_Template_Lifestyle_Top_980x280.html</a></li>
-            
+            <li class="heading">Entertainment</li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Entertainment_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Entertainment_Bottom_650x90.html">Duwun_Desktop_New_Template_Entertainment_Bottom_650x90.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Entertainment_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Entertainment_Middle_650x90.html">Duwun_Desktop_New_Template_Entertainment_Middle_650x90.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Entertainment_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Entertainment_Top_980x280.html">Duwun_Desktop_New_Template_Entertainment_Top_980x280.html</a></li>
+            <li class="heading">News</li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_News_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_News_Bottom_650x90.html">Duwun_Desktop_New_Template_News_Bottom_650x90.html</a></li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_News_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_News_Middle_650x90.html">Duwun_Desktop_New_Template_News_Middle_650x90.html</a></li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_News_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_News_Top_980x280.html">Duwun_Desktop_New_Template_News_Top_980x280.html</a></li>
-            
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Global_Rectangle_300x250.html" class="" title="Duwun_Desktop_New_Template_Global_Rectangle_300x250.html">Duwun_Desktop_New_Template_Global_Rectangle_300x250.html</a></li>
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Skyscraper_160x600.html" class="" title="Duwun_Desktop_New_Template_Skyscraper_160x600.html">Duwun_Desktop_New_Template_Skyscraper_160x600.html</a></li>
-            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Skyscraper_Large_300x600.html" class="" title="Duwun_Desktop_New_Template_Skyscraper_Large_300x600.html">Duwun_Desktop_New_Template_Skyscraper_Large_300x600.html</a></li>
-            
+            <li class="heading">Lifestyle</li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Lifestyle_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Lifestyle_Bottom_650x90.html">Duwun_Desktop_New_Template_Lifestyle_Bottom_650x90.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Lifestyle_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Lifestyle_Middle_650x90.html">Duwun_Desktop_New_Template_Lifestyle_Middle_650x90.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Lifestyle_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Lifestyle_Top_980x280.html">Duwun_Desktop_New_Template_Lifestyle_Top_980x280.html</a></li>
+            <li class="heading">Sports</li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Sports_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Sports_Bottom_650x90.html">Duwun_Desktop_New_Template_Sports_Bottom_650x90.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Sports_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Sports_Middle_650x90.html">Duwun_Desktop_New_Template_Sports_Middle_650x90.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Sports_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Sports_Top_980x280.html">Duwun_Desktop_New_Template_Sports_Top_980x280.html</a></li>
+            <li class="heading">Tech</li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Tech_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Tech_Bottom_650x90.html">Duwun_Desktop_New_Template_Tech_Bottom_650x90.html</a></li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Tech_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Tech_Middle_650x90.html">Duwun_Desktop_New_Template_Tech_Middle_650x90.html</a></li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Tech_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Tech_Top_980x280.html">Duwun_Desktop_New_Template_Tech_Top_980x280.html</a></li>
-            
+            <li class="heading">Education</li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Education_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Education_Bottom_650x90.html">Duwun_Desktop_New_Template_Education_Bottom_650x90.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Education_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Education_Middle_650x90.html">Duwun_Desktop_New_Template_Education_Middle_650x90.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Education_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Education_Top_980x280.html">Duwun_Desktop_New_Template_Education_Top_980x280.html</a></li>
+            <li class="heading">Women</li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Women_Bottom_650x90.html" class="" title="Duwun_Desktop_New_Template_Women_Bottom_650x90.html">Duwun_Desktop_New_Template_Women_Bottom_650x90.html</a></li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Women_Middle_650x90.html" class="" title="Duwun_Desktop_New_Template_Women_Middle_650x90.html">Duwun_Desktop_New_Template_Women_Middle_650x90.html</a></li>
             <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Women_Top_980x280.html" class="" title="Duwun_Desktop_New_Template_Women_Top_980x280.html">Duwun_Desktop_New_Template_Women_Top_980x280.html</a></li>
+            <li class="heading">Global</li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Global_Rectangle_300x250.html" class="" title="Duwun_Desktop_New_Template_Global_Rectangle_300x250.html">Duwun_Desktop_New_Template_Global_Rectangle_300x250.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Skyscraper_160x600.html" class="" title="Duwun_Desktop_New_Template_Skyscraper_160x600.html">Duwun_Desktop_New_Template_Skyscraper_160x600.html</a></li>
+            <li><a href="..\dfp-tags\Duwun_Desktop_New_Template_Skyscraper_Large_300x600.html" class="" title="Duwun_Desktop_New_Template_Skyscraper_Large_300x600.html">Duwun_Desktop_New_Template_Skyscraper_Large_300x600.html</a></li>
 
         </ul>
     </div>
 </body>
+
 </html>
