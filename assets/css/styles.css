@@ -2826,7 +2826,7 @@ i.fa.fa-temp-messenger-filled::before {
   text-align: center;
 }
 /* line 2461, ../sass/styles.scss */
-.img_center img {
+.img_center .banner_ads_wapper_img {
   width: 300px;
 }
 
@@ -2852,11 +2852,16 @@ i.fa.fa-temp-messenger-filled::before {
     float: left;
     display: inline-block;
     text-align: center;
-    width: 150px;
+    width: 180px;
   }
   /* line 2488, ../sass/styles.scss */
   .slick_slider:not(.slick-initialized) .single_item img {
     border: 1px solid white;
     border-top: 0;
   }
+}
+
+/* line 2497, ../sass/styles.scss */
+.ads_center {
+  margin: 0 auto;
 }

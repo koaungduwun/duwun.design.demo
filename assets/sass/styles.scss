@@ -2458,7 +2458,7 @@ i.fa {
 //MTK start
 .img_center {
     text-align: center;
-    img {
+    .banner_ads_wapper_img{
         width: 300px;
     }
 }
@@ -2483,7 +2483,7 @@ i.fa {
                 float: left;
                 display: inline-block;
                 text-align: center;
-                width: 150px;
+                width: 180px;
 
                 img {
                     border: 1px solid white;
@@ -2494,6 +2494,8 @@ i.fa {
         }
     }
 }
-
+.ads_center{
+    margin:0 auto;
+}
 
 
