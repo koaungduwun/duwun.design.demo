@@ -2846,7 +2846,7 @@ i.fa.fa-temp-messenger-filled::before {
 
 @media (min-width: 992px) {
   /* line 2484, ../sass/styles.scss */
-  .slick_slider:not(.slick-initialized) .single_item, .sponsors_slick:not(.slick-initialized) .single_item, .columnist_slick:not(.slick-initialized) .single_item {
+  .slick_slider:not(.slick-initialized) .single_item, .sponsors_slick:not(.slick-initialized) .single_item, .columnist_slick:not(.slick-initialized) .single_item, .gallery-slick:not(.slick-initialized) .single_item {
     position: relative;
     float: left;
     display: inline-block;
@@ -2854,30 +2854,54 @@ i.fa.fa-temp-messenger-filled::before {
     width: 180px;
   }
   /* line 2491, ../sass/styles.scss */
-  .slick_slider:not(.slick-initialized) .single_item img, .sponsors_slick:not(.slick-initialized) .single_item img, .columnist_slick:not(.slick-initialized) .single_item img {
+  .slick_slider:not(.slick-initialized) .single_item img, .sponsors_slick:not(.slick-initialized) .single_item img, .columnist_slick:not(.slick-initialized) .single_item img, .gallery-slick:not(.slick-initialized) .single_item img {
     border: 1px solid white;
     border-top: 0;
   }
 }
 
-/* line 2500, ../sass/styles.scss */
+@media (min-width: 992px) {
+  /* line 2503, ../sass/styles.scss */
+  .gallery-slick:not(.slick-initialized) .single_item {
+    width: 234px;
+  }
+}
+
+/* line 2510, ../sass/styles.scss */
 .ads_center > div {
   margin: 0 auto;
 }
 
-/* line 2504, ../sass/styles.scss */
+/* line 2514, ../sass/styles.scss */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 2508, ../sass/styles.scss */
+/* line 2518, ../sass/styles.scss */
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
 
-/* line 2513, ../sass/styles.scss */
+/* line 2523, ../sass/styles.scss */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* line 2529, ../sass/styles.scss */
+.gallery-wrapper {
+  background: #292929;
+}
+/* line 2532, ../sass/styles.scss */
+.gallery-wrapper .gallery-title {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #e0e0e0;
+}
+/* line 2539, ../sass/styles.scss */
+.gallery-wrapper .slick-prev, .gallery-wrapper .slick-next {
+  background-color: transparent;
+  color: #fff;
 }
