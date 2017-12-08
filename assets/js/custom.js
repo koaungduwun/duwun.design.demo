@@ -151,6 +151,62 @@ jQuery(document).ready(function () {
       ]
     }); 
     
+     $('.gallery-wrapper .slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.slider-nav'        
+    });
+    $('.gallery-wrapper .slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true
+    });    
+
+    
+//	$(".gallery-slick").slick({
+//		dots: true,
+//		infinite: true,
+//		speed: 300,
+//		slidesToShow: 5,
+//		slidesToScroll: 5,
+//		responsive: [{
+//			breakpoint: 1199,
+//			settings: {
+//				slidesToShow: 4,
+//				slidesToScroll: 4,
+//				infinite: true,
+//				dots: true
+//			}
+//		}, {
+//			breakpoint: 991,
+//			settings: {
+//				slidesToShow: 3,
+//				slidesToScroll: 3,
+//				infinite: true,
+//				dots: true
+//			}
+//		}, {
+//			breakpoint: 767,
+//			settings: {
+//				slidesToShow: 2,
+//				slidesToScroll: 2,
+//				dots: true
+//			}
+//		}, {
+//			breakpoint: 575,
+//			settings: {
+//				slidesToShow: 1,
+//				slidesToScroll: 1,
+//				dots: true
+//			}
+//		}]
+//	});    
+    
     
     //Check to see if the window is top if not then display button
     jQuery(window).scroll(function () {

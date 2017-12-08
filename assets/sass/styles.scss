@@ -992,18 +992,21 @@ body {
     }
 }
 
-.single_item {
-    float: left;
-    display: inline;
-    width: 100%;
-    position: relative;
-    img {
-        width: 217px;
+.featured_slider {
+    .single_item {
+        float: left;
+        display: inline;
+        width: 100%;
+        position: relative;
+        img {
+            width: 217px;
 
-        border: 1px solid white;
-        border-top: 0;
-    }
+            border: 1px solid white;
+            border-top: 0;
+        }
+    }    
 }
+
 
 section {
     &#top-teaser {
