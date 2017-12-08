@@ -1004,7 +1004,7 @@ body {
             border: 1px solid white;
             border-top: 0;
         }
-    }    
+    }
 }
 
 
@@ -1770,8 +1770,7 @@ ul.article_page_teasers {
         }
     }
     .columnist_slick {
-        margin-bottom: 0;
-        //float: right;
+        margin-bottom: 0; //float: right;
         overflow: hidden;
         .columnist-item {
             .columnist-teaser-img {
@@ -1941,6 +1940,17 @@ ul.article_page_teasers {
     margin-bottom: 4em;
     position: relative;
     overflow: hidden;
+
+    @media (min-width: 992px) {
+        max-height: 325px;
+    }
+    @media (max-width: 991px) {
+        max-height: 320px;
+    }
+    @media (max-width: 767px) {
+        max-height: 430px;
+    }
+
     .img_mega_teaser {
         width: 100%;
         height: auto;
@@ -2461,7 +2471,7 @@ i.fa {
 //MTK start
 .img_center {
     text-align: center;
-    .banner_ads_wapper_img{
+    .banner_ads_wapper_img {
         width: 300px;
     }
 }
@@ -2478,7 +2488,11 @@ i.fa {
     padding-top: 20px;
 }
 
-.slick_slider, .sponsors_slick, .columnist_slick{
+.slick_slider,
+.sponsors_slick,
+.columnist_slick,
+.gallery-slick ,
+.slider-nav{
     &:not(.slick-initialized) {
         @media (min-width: 992px) {
             .single_item {
@@ -2497,22 +2511,64 @@ i.fa {
         }
     }
 }
-.ads_center > div{
-    margin:0 auto;
+
+.gallery-slick ,.slider-nav{
+    &:not(.slick-initialized) {
+        @media (min-width: 992px) {
+            .single_item {
+                width: 234px;
+            }
+        }
+    }
 }
+
+.ads_center > div {
+    margin: 0 auto;
+}
+
 //scrollbar start
 ::-webkit-scrollbar {
     width: 10px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+
 //scrollbar end
+.gallery-wrapper {
+    background: #292929;
+
+    .gallery-title {
+        padding-top: 25px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: #e0e0e0;
+
+    }
+    .slick-prev,
+    .slick-next {
+        background-color: transparent;
+        color: #fff;
+    }
+}
+
+.gallery-slick.slider-for div.single_item {
+    img {
+        width: 100%!important;
+        display: inline-block;
+    }
+    .gallery-content {
+        background: #292929;
+        padding: 15px 0px 0px 20px;
+        color: #e0e0e0;
+
+    }
+}
