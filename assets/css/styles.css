@@ -2917,39 +2917,54 @@ i.fa.fa-temp-messenger-filled::before {
 
 /* line 2546, ../sass/styles.scss */
 .gallery-wrapper {
-  background: #292929;
+  background-color: #292929;
 }
-/* line 2549, ../sass/styles.scss */
-.gallery-wrapper .pagingInfo {
+/* line 2550, ../sass/styles.scss */
+.gallery-wrapper .slickInfo {
+  margin-top: -20px;
+  font-size: 0.9em;
+}
+/* line 2554, ../sass/styles.scss */
+.gallery-wrapper .slickInfo .pagingInfo {
   float: left;
-  position: relative;
-  z-index: 1;
-  margin-left: 10px;
-  margin-top: -39px;
   color: white;
+  text-align: right;
+  min-width: 60px;
+  background-color: #292929;
+  padding: 5px;
 }
-/* line 2558, ../sass/styles.scss */
+/* line 2562, ../sass/styles.scss */
+.gallery-wrapper .slickInfo .showHideCaption {
+  float: right;
+  cursor: pointer;
+  color: white;
+  padding: 5px 15px 0 0;
+}
+/* line 2570, ../sass/styles.scss */
 .gallery-wrapper .gallery-title {
   padding-top: 25px;
   padding-bottom: 20px;
   text-align: center;
   color: #e0e0e0;
 }
-/* line 2565, ../sass/styles.scss */
+/* line 2577, ../sass/styles.scss */
 .gallery-wrapper .slick-prev,
 .gallery-wrapper .slick-next {
   background-color: transparent;
   color: #fff;
 }
-
-/* line 2573, ../sass/styles.scss */
-.gallery-slick.slider-for div.single_item img {
+/* line 2586, ../sass/styles.scss */
+.gallery-wrapper .gallery-slick.slider-for div.single_item img {
   width: 100% !important;
   display: inline-block;
 }
-/* line 2577, ../sass/styles.scss */
-.gallery-slick.slider-for div.single_item .gallery-content {
+/* line 2590, ../sass/styles.scss */
+.gallery-wrapper .gallery-slick.slider-for div.single_item .gallery-content {
   background: #292929;
-  padding: 15px 0 0 60px;
+  padding: 15px 0 15px 15px;
   color: #e0e0e0;
+}
+/* line 2599, ../sass/styles.scss */
+.gallery-wrapper .slider-nav .slick-center, .gallery-wrapper .slider-nav .slick-current {
+  border-bottom: 4px solid #ed7123;
 }
