@@ -155,10 +155,13 @@ jQuery(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
-      fade: true,
+
       asNavFor: '.slider-nav'        
     });
-    $('.gallery-wrapper .slider-nav').slick({
+    var $status = $('.pagingInfo');
+    var $slickElement = $('.gallery-wrapper .slider-nav');  
+
+    $slickElement.slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       asNavFor: '.slider-for',
@@ -166,7 +169,14 @@ jQuery(document).ready(function () {
       centerMode: true,
       focusOnSelect: true
     });    
+    
+    $status.text('1 of ' + $slickElement.slick('getSlick').slideCount);
 
+    $slickElement.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + ' of ' + slick.slideCount);
+    });
     
 //	$(".gallery-slick").slick({
 //		dots: true,

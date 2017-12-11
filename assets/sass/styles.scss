@@ -2545,6 +2545,15 @@ i.fa {
 //scrollbar end
 .gallery-wrapper {
     background: #292929;
+    
+    .pagingInfo {
+        float:left;
+        position:relative;
+        z-index:1;
+        margin-left: 10px;
+        margin-top:-39px;
+        color:white;        
+    }
 
     .gallery-title {
         padding-top: 25px;
@@ -2567,7 +2576,7 @@ i.fa {
     }
     .gallery-content {
         background: #292929;
-        padding: 15px 0px 0px 20px;
+        padding: 15px 0 0 60px;
         color: #e0e0e0;
 
     }
