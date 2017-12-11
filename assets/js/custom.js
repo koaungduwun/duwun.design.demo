@@ -156,6 +156,7 @@ jQuery(document).ready(function () {
         slidesToScroll: 1,
         arrows: true,
 //        infinite: false,
+//         swipeToSlide: true,
         asNavFor: '.slider-nav'        
     });
     var $status = $('.gallery-wrapper .pagingInfo');
@@ -168,6 +169,7 @@ jQuery(document).ready(function () {
         dots: false,
         centerMode: true,
 //        infinite: false,
+        swipeToSlide: true,
         focusOnSelect: true
     });    
     
