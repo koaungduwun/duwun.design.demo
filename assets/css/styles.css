@@ -2920,27 +2920,36 @@ i.fa.fa-temp-messenger-filled::before {
   background: #292929;
 }
 /* line 2549, ../sass/styles.scss */
+.gallery-wrapper .pagingInfo {
+  float: left;
+  position: relative;
+  z-index: 1;
+  margin-left: 10px;
+  margin-top: -39px;
+  color: white;
+}
+/* line 2558, ../sass/styles.scss */
 .gallery-wrapper .gallery-title {
   padding-top: 25px;
   padding-bottom: 20px;
   text-align: center;
   color: #e0e0e0;
 }
-/* line 2556, ../sass/styles.scss */
+/* line 2565, ../sass/styles.scss */
 .gallery-wrapper .slick-prev,
 .gallery-wrapper .slick-next {
   background-color: transparent;
   color: #fff;
 }
 
-/* line 2564, ../sass/styles.scss */
+/* line 2573, ../sass/styles.scss */
 .gallery-slick.slider-for div.single_item img {
   width: 100% !important;
   display: inline-block;
 }
-/* line 2568, ../sass/styles.scss */
+/* line 2577, ../sass/styles.scss */
 .gallery-slick.slider-for div.single_item .gallery-content {
   background: #292929;
-  padding: 15px 0px 0px 20px;
+  padding: 15px 0 0 60px;
   color: #e0e0e0;
 }
