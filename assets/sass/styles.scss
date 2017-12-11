@@ -2544,15 +2544,27 @@ i.fa {
 
 //scrollbar end
 .gallery-wrapper {
-    background: #292929;
+    $bg-color: #292929;
+    background-color: $bg-color;
     
-    .pagingInfo {
-        float:left;
-        position:relative;
-        z-index:1;
-        margin-left: 10px;
-        margin-top:-39px;
-        color:white;        
+    .slickInfo {
+        margin-top: -20px;
+        font-size: 0.9em;
+        
+        .pagingInfo {
+            float:left;
+            color:white;            
+            text-align: right;
+            min-width: 60px;
+            background-color: $bg-color;
+            padding: 5px;
+        }
+        .showHideCaption {
+            float: right;
+            cursor: pointer;
+            color: white;
+            padding: 5px 15px 0 0;
+        }
     }
 
     .gallery-title {
@@ -2567,17 +2579,30 @@ i.fa {
         background-color: transparent;
         color: #fff;
     }
+    
+    .gallery-slick {
+        &.slider-for {
+            div.single_item {
+                img {
+                    width: 100%!important;
+                    display: inline-block;
+                }
+                .gallery-content {
+                    background: #292929;
+                    padding: 15px 0 15px 15px;
+                    color: #e0e0e0;
+                }                
+            }           
+        }    
+    } 
+    .slider-nav {
+        .slick-center, .slick-current {
+            border-bottom: 4px solid $primary-color;
+        }
+        .slick-slide {
+//            min-width: 204px;
+        }
+    }
 }
 
-.gallery-slick.slider-for div.single_item {
-    img {
-        width: 100%!important;
-        display: inline-block;
-    }
-    .gallery-content {
-        background: #292929;
-        padding: 15px 0 0 60px;
-        color: #e0e0e0;
 
-    }
-}
