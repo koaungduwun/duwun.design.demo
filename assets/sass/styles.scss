@@ -11,11 +11,29 @@ sans-serif,
 Zawgyi-One;
 $primary-color: #ed7123;
 
-@mixin theme-font($fonts, $weight, $size, $style) {
+@mixin theme-font($fonts, $weight: '', $size: '', $style: '') {
     font-family: $fonts;
-    font-weight: $weight;
-    font-size: $size;
-    font-style: $style;
+    
+    @if $weight=='' {
+        //font-weight: normal;
+    }
+    @else {
+        font-weight: $weight;
+    }    
+    
+    @if $size=='' {
+        //font-size: inherit;
+    }
+    @else {
+        font-size: $size;
+    }
+    
+    @if $style=='' {
+        //font-style: normal;
+    }
+    @else {
+        font-style: $style;
+    }
 }
 
 @mixin teaser_intro_overlay($height) {
@@ -96,7 +114,7 @@ button {
 body {
     background-color: #fff;
     color: #000;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 
 ul {
@@ -148,11 +166,6 @@ img {
 
 .yellow_bg {
     background-color: #ffd62c;
-}
-
-.nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
 }
 
 .btn-yellow {
@@ -356,7 +369,7 @@ table {
                 .nav_search_form_wrapper form#nav_search_form {
                     .search_bar {
                         @media (max-width: 767px) {
-                            border-width: 12px!important;
+                            border-width: 12px;
                             height: 66px;
                         }
                     }
@@ -421,6 +434,9 @@ table {
                 @media (max-width: 991px) {
                     width: 100%;
                 }
+                .icon8-a {
+                    line-height: 10px;
+                }                
                 &.in {
                     @media (max-width: 767px) {
                         ul.navbar-right > li > a > i.fa {
@@ -436,7 +452,7 @@ table {
                     }
                 }
                 @media (max-width: 767px) {
-                    margin-right: 0 !important;
+                    margin-right: 0;
                     float: right;
                 }
                 .nav_main_search {
@@ -765,10 +781,7 @@ body {
         input,
         button,
         time {
-            @include theme-font($font-stack-default,
-            normal,
-            inherit,
-            normal);
+            @include theme-font($font-stack-default, '', '', '');
         }
     }
 }
@@ -817,7 +830,7 @@ body {
             margin-top: 6px;
             strong.teaser_category a {
                 text-transform: uppercase;
-                font-weight: 700!important;
+                font-weight: 700;
             }
         }
     }
@@ -841,14 +854,9 @@ body {
 
 #footer {
     .featured_title {
-        @include theme-font($font-stack-default,
-        normal,
-        inherit,
-        normal);
-        font-size: 15px!important;
+        @include theme-font($font-stack-default, normal, 15px, normal);
         line-height: 2em;
         color: #fff;
-        font-size: 12px;
         text-transform: uppercase;
         margin: 0 0 0 12px;
         padding: 0.5em 0;
@@ -874,7 +882,7 @@ body {
             padding-right: 15px;
         }
         .featured_widget {
-            overflow: hidden!important; //margin-bottom: 32px;  
+            overflow: hidden; //margin-bottom: 32px;  
             //width: 104%;            
             width: 280px;
             @media (max-width: 1199px) {
@@ -920,7 +928,7 @@ body {
                 &.panel-default {
                     border-right: 0;
                     border-left: 0;
-                    background: none!important;
+                    background: none;
                     border-radius: 0;
                     border: none;
                     box-shadow: none;
@@ -964,7 +972,7 @@ body {
                             }
                         }
                         > thead > tr > th {
-                            border: none!important;
+                            border: none;
                         }
                         td.price {
                             color: $primary-color;
@@ -1100,7 +1108,7 @@ section {
                     }
                     .teaser_article_title {
                         a {
-                            color: white!important;
+                            color: white;
                             font-size: 1.1em;
                         }
                     }
@@ -1154,10 +1162,10 @@ section {
                     border: 1px solid $primary-color;
                     font-size: 2em;
                     background-color: rgba(255, 255, 255, 1);
-                    color: $primary-color !important;
-                    top: 50px !important;
-                    right: 5% !important;
-                    left: auto !important;
+                    color: $primary-color;
+                    top: 50px;
+                    right: 5%;
+                    left: auto;
                     span.vjs-control-text {
                         clip: rect(0 0 0 0);
                     }
@@ -1181,7 +1189,7 @@ section {
     right: 16px;
     top: 100px;
     &.affix {
-        position: fixed !important;
+        position: fixed;
         right: 16px;
         top: 100px;
     }
@@ -1254,12 +1262,12 @@ section {
     font-weight: 700;
     font-size: 1.3em;
     &.bold {
-        font-size: 2em!important;
-        font-weight: 700!important;
+        font-size: 2em;
+        font-weight: 700;
     }
     &.bolder {
-        font-size: 2em!important;
-        font-weight: 900!important;
+        font-size: 2em;
+        font-weight: 900;
     }
 }
 
@@ -1291,7 +1299,7 @@ section {
 
 .post-meta.group {
     text-transform: uppercase;
-    font-weight: bolder; //float: left;
+    //font-weight: bolder; //float: left;
     display: inline-block;
     width: 100%;
     line-height: 50px;
@@ -1312,20 +1320,20 @@ section {
         float: left;
         height: 50px;
         a {
-            font-weight: 700!important;
-            font-size: 17px!important;
+            font-weight: 700;
+            font-size: 17px;
             padding-top: 4px;
         }
     }
     &.video {
-        height: auto!important;
+        height: auto;
         line-height: 3;
         border-bottom: 0;
         .teaser_category {
-            height: auto!important;
+            height: auto;
             a {
-                font-weight: 700!important;
-                font-size: 17px!important;
+                font-weight: 700;
+                font-size: 17px;
                 padding-top: 4px;
             }
         }
@@ -1339,11 +1347,11 @@ section {
         }
     }
     &.lead {
-        line-height: 2em!important;
+        line-height: 2em;
         font-size: 31px;
         .teaser_category {
             a {
-                font-size: 21px!important;
+                font-size: 21px;
                 padding-top: 4px;
             }
         }
@@ -1351,7 +1359,7 @@ section {
     a {
         &.social_share {
             color: #555;
-            font-weight: 400!important;
+            font-weight: 400;
         }
         &.sponsored_by {
             color: #555;
@@ -1369,7 +1377,7 @@ section {
             }
 
             small {
-                font-size: 10px!important;
+                font-size: 10px;
                 margin-left: 4px;
             }
             strong {
@@ -1392,10 +1400,10 @@ section {
                     min-width: 80px;
                 }
                 strong {
-                    margin-bottom: -8px!important;
+                    margin-bottom: -8px;
                     min-width: 90px;
-                    font-size: 20px!important;
-                    font-weight: 700!important;
+                    font-size: 20px;
+                    font-weight: 700;
                     padding-right: 4px;
                 }
                 .teaser_article & {
@@ -1513,7 +1521,7 @@ ul.article_page_teasers {
         overflow: hidden;
         margin-buttom: 30px;
         a {
-            color: white!important;
+            color: white;
             font-size: 1.2em;
             overflow: hidden;
             span.inverse_breaker {
@@ -1726,6 +1734,11 @@ ul.article_page_teasers {
 .columnist_container {
     margin-top: 1em;
     margin-bottom: 1em;
+
+    .nopadding {
+        padding: 0;
+        margin: 0;
+    }
     .columnist_caption {
         height: 190px;
         color: white;
@@ -1778,7 +1791,7 @@ ul.article_page_teasers {
                     height: 150px;
                 }
                 img.img-responsive {
-                    width: 100%!important;
+                    width: 100%;
                 }
             }
             .teaser_text {
@@ -1801,16 +1814,16 @@ ul.article_page_teasers {
                 height: 40px;
                 border-radius: 50%;
                 border: 1px solid #eee;
-                overflow: hidden!important;
+                overflow: hidden;
                 img {
                     &.img-responsive {
-                        width: auto!important;
-                        max-width: 200%!important;
+                        width: auto;
+                        max-width: 200%;
                     }
                     display: block;
                     height: 100%;
                     margin: auto;
-                    position: absolute!important;
+                    position: absolute;
                     top: -100%;
                     right: -100%;
                     bottom: -100%;
@@ -1918,7 +1931,7 @@ ul.article_page_teasers {
                 height: 98px;
             }
             */
-            border-right: 1px solid black!important;
+            border-right: 1px solid black;
         }
     }
     .peoplespick_slick {
@@ -2107,7 +2120,7 @@ ul.article_page_teasers {
             margin-left: 0;
         }
         input.email {
-            border: 2px solid black!important;
+            border: 2px solid black;
             padding: 4px;
             width: 40%;
         }
@@ -2258,10 +2271,6 @@ ul.social_icons {
 .icons8-Viber-Default {
     /* Customizes Viber Filled icon */
     fill: #7b4e9f;
-}
-
-.icon8-a {
-    line-height: 10px !important;
 }
 
 .icon8 {
@@ -2584,7 +2593,7 @@ i.fa {
         &.slider-for {
             div.single_item {
                 img {
-                    width: 100%!important;
+                    width: 100%;
                     display: inline-block;
                 }
                 .gallery-content {
