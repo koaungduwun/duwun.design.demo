@@ -92,7 +92,7 @@
 }
 /* line 89, ../sass/theme.scss */
 .dw-widget ul li.active > a:hover {
-  color: #ed7123 !important;
+  color: #ed7123;
   text-decoration: none;
 }
 

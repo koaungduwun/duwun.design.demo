@@ -18,6 +18,7 @@ jQuery(document).ready(function () {
         speed: 300,
         slidesToShow: 5,
         slidesToScroll: 5,
+        swipeToSlide: true,
         responsive: [{
             breakpoint: 1199,
             settings: {
@@ -59,6 +60,7 @@ jQuery(document).ready(function () {
       autoplaySpeed: 2000,
       prevArrow: false,
       nextArrow: false,
+      swipeToSlide: true,
       responsive: [
         {
           breakpoint: 991,
@@ -93,6 +95,7 @@ jQuery(document).ready(function () {
       autoplaySpeed: 2000,
       prevArrow: false,
       nextArrow: false,
+      swipeToSlide: true,
       responsive: [
         {
           breakpoint: 991,
@@ -128,6 +131,7 @@ jQuery(document).ready(function () {
       autoplaySpeed: 2000,
       prevArrow: false,
       nextArrow: false,
+      swipeToSlide: true,
       responsive: [
         {
           breakpoint: 991,

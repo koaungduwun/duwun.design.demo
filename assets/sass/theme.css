@@ -1,0 +1,108 @@
+/* line 3, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.scrollToTop {
+  background-color: #ed7123;
+  color: #ffffff; }
+  /* line 6, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+  .scrollToTop:hover, .scrollToTop:focus {
+    background-color: #fff;
+    color: #ed7123;
+    border-color: 1px solid #ed7123; }
+
+/* line 13, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+#header {
+  background: none repeat scroll 0 0 #ed7123; }
+
+/* line 17, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.navbar-default {
+  background-color: #ed7123;
+  border-color: #ed7123; }
+  /* line 21, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+  .navbar-default .navbar-nav > .active > a {
+    color: #ed7123; }
+    /* line 23, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+    .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+      color: #ed7123; }
+  /* line 28, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ed7123; }
+
+/* line 35, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.dropdown-menu {
+  background-color: #fefefe; }
+  /* line 37, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+  .dropdown-menu li a {
+    color: #ed7123; }
+    /* line 39, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+    .dropdown-menu li a:hover, .dropdown-menu li a:focus {
+      color: #fff;
+      background-color: #ed7123; }
+
+/* line 46, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.search_icon i {
+  color: #333; }
+
+/* line 50, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.search_bar {
+  border: 2px solid #ed7123; }
+
+/* line 56, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ed7123; }
+
+/* line 63, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.dw-readmore, .category_heading a, .article_category a, .teaser_category a {
+  color: #ed7123; }
+
+/* line 67, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.middle_content > h2, .featured_title, .slick-prev, .slick-next {
+  background-color: #ed7123; }
+
+/* line 71, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.article_title a {
+  color: #000;
+  font-weight: bold; }
+
+/* line 77, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  background-color: #ed7123;
+  color: #fff;
+  border-color: #ed7123; }
+
+/* line 85, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.dw-widget ul li > a:hover {
+  color: #ed7123;
+  text-decoration: underline; }
+
+/* line 89, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.dw-widget ul li.active > a:hover {
+  color: #ed7123;
+  text-decoration: none; }
+
+/* line 95, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.footer_top {
+  border-top: 5px solid #ed7123; }
+
+/* line 100, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.footer_widget > h2:before, .footer_widget > h2:hover {
+  color: #ed7123; }
+
+/* line 105, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.labels_nav li a:hover, .footer_widget .media a:hover {
+  color: #ed7123; }
+
+/* line 109, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+#subscribe-submit input {
+  background-color: #ed7123; }
+  /* line 111, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+  #subscribe-submit input:hover {
+    color: #ed7123; }
+
+/* line 116, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.related_post > h2 i, .contact_area > h3:before {
+  color: #ed7123; }
+
+/* line 120, D:/xampp/htdocs/duwun.com.mm/assets/sass/theme.scss */
+.copyright a:hover, .erropr_recentpost > h2:before {
+  color: #ed7123; }
+
+/*# sourceMappingURL=theme.css.map */
