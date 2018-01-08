@@ -58,7 +58,7 @@
 }
 
 /* line 56, ../sass/theme.scss */
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.navbar-default .main-toggle:hover, .navbar-default .main-toggle:focus {
   background-color: #ed7123;
 }
 

@@ -488,7 +488,6 @@ table.borderless tr > th {
 /* line 527, ../sass/styles.scss */
 #header-container #main-navbar #navbar {
   margin-top: 10px;
-  margin-right: -20px;
 }
 /* line 532, ../sass/styles.scss */
 #header-container #main-navbar #navbar ul li a {
@@ -2895,32 +2894,15 @@ i.fa.fa-temp-messenger-filled::before {
 }
 
 /* line 2544, ../sass/styles.scss */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* line 2548, ../sass/styles.scss */
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-}
-
-/* line 2553, ../sass/styles.scss */
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-}
-
-/* line 2560, ../sass/styles.scss */
 .gallery-wrapper {
   background-color: #292929;
 }
-/* line 2564, ../sass/styles.scss */
+/* line 2548, ../sass/styles.scss */
 .gallery-wrapper .slickInfo {
   margin-top: -20px;
   font-size: 0.9em;
 }
-/* line 2568, ../sass/styles.scss */
+/* line 2552, ../sass/styles.scss */
 .gallery-wrapper .slickInfo .pagingInfo {
   float: left;
   color: white;
@@ -2929,38 +2911,38 @@ i.fa.fa-temp-messenger-filled::before {
   background-color: #292929;
   padding: 5px;
 }
-/* line 2576, ../sass/styles.scss */
+/* line 2560, ../sass/styles.scss */
 .gallery-wrapper .slickInfo .showHideCaption {
   float: right;
   cursor: pointer;
   color: white;
   padding: 5px 15px 0 0;
 }
-/* line 2584, ../sass/styles.scss */
+/* line 2568, ../sass/styles.scss */
 .gallery-wrapper .gallery-title {
   padding-top: 25px;
   padding-bottom: 20px;
   text-align: center;
   color: #e0e0e0;
 }
-/* line 2591, ../sass/styles.scss */
+/* line 2575, ../sass/styles.scss */
 .gallery-wrapper .slick-prev,
 .gallery-wrapper .slick-next {
   background-color: transparent;
   color: #fff;
 }
-/* line 2600, ../sass/styles.scss */
+/* line 2584, ../sass/styles.scss */
 .gallery-wrapper .gallery-slick.slider-for div.single_item img {
   width: 100%;
   display: inline-block;
 }
-/* line 2604, ../sass/styles.scss */
+/* line 2588, ../sass/styles.scss */
 .gallery-wrapper .gallery-slick.slider-for div.single_item .gallery-content {
   background: #292929;
   padding: 15px 0 15px 15px;
   color: #e0e0e0;
 }
-/* line 2613, ../sass/styles.scss */
+/* line 2597, ../sass/styles.scss */
 .gallery-wrapper .slider-nav .slick-center, .gallery-wrapper .slider-nav .slick-current {
   border-bottom: 4px solid #ed7123;
 }
