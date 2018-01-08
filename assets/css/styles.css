@@ -324,7 +324,7 @@ table.borderless tr > th {
 @media (max-width: 767px) {
   /* line 375, ../sass/styles.scss */
   #header-container.affix #main-navbar .container .nav_search_form_wrapper form#nav_search_form .search_bar {
-    border-width: 12px;
+    border-width: 12px !important;
     height: 66px;
   }
 }
@@ -344,8 +344,8 @@ table.borderless tr > th {
 }
 /* line 404, ../sass/styles.scss */
 #header-container #main-navbar {
-  padding-top: 26px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   background-color: #ed7123;
 }
 @media (min-width: 1440px) {
@@ -372,38 +372,34 @@ table.borderless tr > th {
     display: block;
   }
 }
-/* line 426, ../sass/styles.scss */
+/* line 427, ../sass/styles.scss */
 #header-container #main-navbar .container .navbar-header .nav_main_search .search_icon i {
   color: white;
 }
-/* line 432, ../sass/styles.scss */
+/* line 433, ../sass/styles.scss */
 #header-container #main-navbar .container .navbar-collapse {
   float: left;
   position: relative;
   width: 84%;
 }
 @media (max-width: 1199px) {
-  /* line 432, ../sass/styles.scss */
+  /* line 433, ../sass/styles.scss */
   #header-container #main-navbar .container .navbar-collapse {
     width: 100%;
   }
 }
 @media (max-width: 991px) {
-  /* line 432, ../sass/styles.scss */
+  /* line 433, ../sass/styles.scss */
   #header-container #main-navbar .container .navbar-collapse {
     width: 100%;
   }
 }
-/* line 442, ../sass/styles.scss */
-#header-container #main-navbar .container .navbar-collapse .icon8-a {
-  line-height: 10px;
-}
 @media (max-width: 767px) {
-  /* line 447, ../sass/styles.scss */
+  /* line 445, ../sass/styles.scss */
   #header-container #main-navbar .container .navbar-collapse.in ul.navbar-right > li > a > i.fa {
     font-size: 30px;
   }
-  /* line 451, ../sass/styles.scss */
+  /* line 449, ../sass/styles.scss */
   #header-container #main-navbar .container .navbar-collapse.in a.icon8-a .svg.icons8-Facebook-Messenger-Filled,
   #header-container #main-navbar .container .navbar-collapse.in a.icon8-a .svg.icons8-Viber-Filled {
     height: 30px;
@@ -411,34 +407,34 @@ table.borderless tr > th {
   }
 }
 @media (max-width: 767px) {
-  /* line 432, ../sass/styles.scss */
+  /* line 433, ../sass/styles.scss */
   #header-container #main-navbar .container .navbar-collapse {
-    margin-right: 0;
+    margin-right: 0 !important;
     float: right;
   }
 }
 @media (max-width: 767px) {
-  /* line 463, ../sass/styles.scss */
+  /* line 461, ../sass/styles.scss */
   #header-container #main-navbar .container .navbar-collapse .nav_main_search {
     display: none;
   }
 }
-/* line 470, ../sass/styles.scss */
+/* line 468, ../sass/styles.scss */
 #header-container #main-navbar .container .nav_search_form_wrapper {
   position: relative;
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 470, ../sass/styles.scss */
+  /* line 468, ../sass/styles.scss */
   #header-container #main-navbar .container .nav_search_form_wrapper {
     float: none;
   }
 }
-/* line 477, ../sass/styles.scss */
+/* line 475, ../sass/styles.scss */
 #header-container #main-navbar .container .nav_search_form_wrapper form#nav_search_form {
   display: none;
 }
-/* line 479, ../sass/styles.scss */
+/* line 477, ../sass/styles.scss */
 #header-container #main-navbar .container .nav_search_form_wrapper form#nav_search_form .search_bar {
   position: relative;
   margin: 0 auto;
@@ -447,14 +443,14 @@ table.borderless tr > th {
   height: 45px;
 }
 @media (max-width: 767px) {
-  /* line 479, ../sass/styles.scss */
+  /* line 477, ../sass/styles.scss */
   #header-container #main-navbar .container .nav_search_form_wrapper form#nav_search_form .search_bar {
     height: 88px;
     border-width: 20px;
   }
 }
 @media (max-width: 767px) {
-  /* line 477, ../sass/styles.scss */
+  /* line 475, ../sass/styles.scss */
   #header-container #main-navbar .container .nav_search_form_wrapper form#nav_search_form {
     width: 70%;
     height: 80%;
@@ -467,7 +463,7 @@ table.borderless tr > th {
   }
 }
 @media (min-width: 768px) {
-  /* line 477, ../sass/styles.scss */
+  /* line 475, ../sass/styles.scss */
   #header-container #main-navbar .container .nav_search_form_wrapper form#nav_search_form {
     position: absolute;
     height: 45px;
@@ -480,7 +476,7 @@ table.borderless tr > th {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 477, ../sass/styles.scss */
+  /* line 475, ../sass/styles.scss */
   #header-container #main-navbar .container .nav_search_form_wrapper form#nav_search_form {
     top: 110px;
   }
