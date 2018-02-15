@@ -1310,12 +1310,6 @@ section .dw-widget-teasers-video .playerbox .video-js button.vjs-big-play-button
   right: 16px;
   top: 100px;
 }
-@media (max-width: 1320px) {
-  /* line 1190, ../sass/styles.scss */
-  #top-skyscraper {
-    display: none;
-  }
-}
 
 /* line 1206, ../sass/styles.scss */
 .frontpage_teasers li {

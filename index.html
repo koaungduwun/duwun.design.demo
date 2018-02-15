@@ -42,11 +42,69 @@
 
     <script>
         googletag.cmd.push(function() {
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_home_top_980x280', [980, 280], 'div-gpt-ad-1512672500717-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_home_middle_650x90', [650, 90], 'div-gpt-ad-1512672479654-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_home_bottom_650x90', [650, 90], 'div-gpt-ad-1512672456934-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_global_rectangle_300x250', [300, 250], 'div-gpt-ad-1512616689296-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_160x600', [160, 600], 'div-gpt-ad-1512617043120-0').addService(googletag.pubads());
+            
+                  var mapping1 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 600], [980, 280]).
+            addSize([1050, 200], [980, 280]). // Desktop
+            build();
+            var mapping2 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [650, 90]).
+            addSize([1050, 200], [650, 90]). // Desktop
+            build();
+            var mapping3 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [650, 90]).
+            addSize([1050, 200], [650, 90]). // Desktop
+            build();
+            var mapping4 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [160, 600]).
+            addSize([1050, 200], [160, 600]). // Desktop
+            build();
+            var mapping5 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [300, 250]).
+            addSize([1050, 200], [300, 250]). // Desktop
+            build();
+
+            // ***************mobile*******************
+
+            var mappingMobile1 = googletag.sizeMapping().
+            addSize([640, 480], [300, 250]).
+            addSize([0, 0], [300, 250]).addSize([1024, 768], []).
+            addSize([1066, 868], []).
+            addSize([992, 690], []).
+            build();
+            var mappingMobile2 = googletag.sizeMapping().
+            addSize([0, 0], [300, 250]).addSize([1066, 868], []).
+            addSize([992, 690], []).
+            build();
+            var mappingMobile3 = googletag.sizeMapping().
+            addSize([0, 0], [300, 250]).addSize([1066, 868], []).
+            addSize([992, 690], []).
+            build();
+           
+            
+            
+            
+            
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_home_top_980x280', [980, 280], 'div-gpt-ad-1512672500717-0').defineSizeMapping(mapping1).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_home_middle_650x90', [650, 90], 'div-gpt-ad-1512672479654-0').defineSizeMapping(mapping2).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_home_bottom_650x90', [650, 90], 'div-gpt-ad-1512672456934-0').defineSizeMapping(mapping3).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_global_rectangle_300x250', [300, 250], 'div-gpt-ad-1512616689296-0').defineSizeMapping(mapping5).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_160x600', [160, 600], 'div-gpt-ad-1512617043120-0').defineSizeMapping(mapping4).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            
+            
+            
+             //            ***************moblile*************
+
+              googletag.defineSlot('/73195129/home_top_rectangle', [300, 250], 'div-gpt-ad-1490091462393-0').defineSizeMapping(mappingMobile1).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/home_middle_rectangle', [300, 250], 'div-gpt-ad-1490091614449-0').defineSizeMapping(mappingMobile2).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/home_bottom_rectangle', [300, 250], 'div-gpt-ad-1490091679480-0').defineSizeMapping(mappingMobile3).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            
+            
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
@@ -277,6 +335,23 @@
 
     <section id="top-teaser">
         <div class="container">
+            <div class='row'>
+            
+             <div class="col-xs-12 mobile_only_ads">
+      
+                    <!-- /73195129/home_top_rectangle -->
+                    <div id='div-gpt-ad-1490091462393-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1490091462393-0');
+                            });
+
+                        </script>
+                    </div>
+
+                </div>
+                
+            </div>
             <div class="row row-slider">
                 <div class="featured_slider col-lg-12 col-md-12 col-sm-12">
                     <div class="slick_slider">
@@ -349,7 +424,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div id="top-leader-board" class="non_mobile_widget ads_center">
                         <!-- /73195129/duwun_desktop_new_template_home_top_980x280 -->
-                        <div id='div-gpt-ad-1512672500717-0' style='height:280px; width:980px;'>
+                        <div id='div-gpt-ad-1512672500717-0'>
                             <script>
                                 googletag.cmd.push(function() {
                                     googletag.display('div-gpt-ad-1512672500717-0');
@@ -366,6 +441,7 @@
                         <br /><br />
                     </div>
                 </div>
+                
             </div>
 
             <div class="row" id="main-teasers" style="padding-bottom: 50px;">
@@ -387,7 +463,7 @@
                     </div>
                     <div class="banner_ads_wrapper non_mobile_widget ads_center">
                         <!-- /73195129/duwun_desktop_new_template_home_middle_650x90 -->
-                        <div id='div-gpt-ad-1512672479654-0' style='height:90px; width:650px;'>
+                        <div id='div-gpt-ad-1512672479654-0'>
                             <script>
                                 googletag.cmd.push(function() {
                                     googletag.display('div-gpt-ad-1512672479654-0');
@@ -436,7 +512,7 @@
                         </div>
                         <div class="banner_ads_wrapper non_mobile_widget ads_center">
                             <!-- /73195129/duwun_desktop_new_template_global_rectangle_300x250 -->
-                            <div id='div-gpt-ad-1512616689296-0' style='height:250px; width:300px;'>
+                            <div id='div-gpt-ad-1512616689296-0'>
                                 <script>
                                     googletag.cmd.push(function() {
                                         googletag.display('div-gpt-ad-1512616689296-0');
@@ -451,6 +527,19 @@
 -->
                         </div>
                     </div>
+                </div>
+                   <div class="col-xs-12 mobile_only_ads">
+      
+                    <!-- /73195129/home_middle_rectangle -->
+                    <div id='div-gpt-ad-1490091614449-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1490091614449-0');
+                            });
+
+                        </script>
+                    </div>
+
                 </div>
             </div>
 
@@ -558,14 +647,17 @@
 
                             </script>
                         </div>
+<!--
                         <a href="#" hidden class="hidden">
                             <img src="images/dfp/ad-banner-730x90.jpg" alt="" class="img-responsive" />
                         </a>
+-->
                     </div>
                 </div>
             </div>
 
             <div class="row row-news-letter">
+               
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="news_letter_container">
                         <i class="news_letter_dashed_line">- - - - - - - - -</i><br />
@@ -620,6 +712,7 @@
             </div>
 
             <div class="row row-teasers">
+                
                 <div class="col-lg-12 col-md-12 col-sm-12">
 
                     <ul class="frontpage_teasers">
@@ -843,11 +936,11 @@
             <div class="row hidden" hidden>
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="banner_ads_wrapper non_mobile_widget">
-                        <!--
+                        
                         <a href="#">
                             <img src="images/dfp/ad-banner-730x90.jpg" alt="" class="img-responsive" />
                         </a>
-                        -->
+                        
                     </div>
                 </div>
             </div>
@@ -944,6 +1037,19 @@
             </div>
 
             <div class="row row-teasers">
+                        <div class="col-xs-12 mobile_only_ads">
+      
+                    <!-- /73195129/home_bottom_rectangle -->
+                    <div id='div-gpt-ad-1490091679480-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1490091679480-0');
+                            });
+
+                        </script>
+                    </div>
+
+                </div>
                 <div class="col-lg-12 col-md-12 col-sm-12">
 
                     <ul class="frontpage_teasers">
