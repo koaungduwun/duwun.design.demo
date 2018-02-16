@@ -1,69 +1,32 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Duwun Demo</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
-    <link rel="dns-prefetch" href="//mmwebfonts.comquas.com">
-    <!--link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" /-->
-    <!--<link rel="stylesheet" href='http://mywebfont.appspot.com/css?font=zawgyi' /-->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css" />
-    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=zawgyi&ver=4.8" type="text/css" media="all">-->
-    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=oursunicode' />
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/theme.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery.smartmenus.bootstrap.css" />
-    <!--[if lt IE 9]>
-  <script src="assets/js/html5shiv.min.js"></script>
-  <script src="assets/js/respond.min.js"></script>
-  <![endif]-->
-    <link rel="icon" href="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-160x160.png" sizes="32x32">
-    <link rel="icon" href="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-250x250.png" sizes="192x192">
-    <link rel="apple-touch-icon-precomposed" href="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-250x250.png">
-    <meta name="msapplication-TileImage" content="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-300x300.png">
-    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-
+<?php include 'parts/head.php'; ?>
     <script>
         var googletag = googletag || {};
         googletag.cmd = googletag.cmd || [];
     </script>
-
-    
+   
     <script>
-        googletag.cmd.push(function() {
-            
-            
-            var mappingEdu1 = googletag.sizeMapping().
+            googletag.cmd.push(function() {
+                      var mappingEnter1 = googletag.sizeMapping().
             addSize([0, 0], []).
             addSize([992, 600], [980, 280]).
             addSize([1050, 200], [980, 280]). // Desktop
             build();
-            var mappingEdu2 = googletag.sizeMapping().
+            var mappingEnter2 = googletag.sizeMapping().
             addSize([0, 0], []).
             addSize([992, 200], [650, 90]).
             addSize([1050, 200], [650, 90]). // Desktop
             build();
-            var mappingEdu3 = googletag.sizeMapping().
+            var mappingEnter3 = googletag.sizeMapping().
             addSize([0, 0], []).
             addSize([992, 200], [650, 90]).
             addSize([1050, 200], [650, 90]). // Desktop
             build();
-            var mappingEdu4 = googletag.sizeMapping().
+            var mappingEnter4 = googletag.sizeMapping().
             addSize([0, 0], []).
             addSize([992, 200], [160, 600]).
             addSize([1050, 200], [160, 600]). // Desktop
             build();
-            var mappingEdu5 = googletag.sizeMapping().
+            var mappingEnter5 = googletag.sizeMapping().
             addSize([0, 0], []).
             addSize([992, 200], [300, 250]).
             addSize([1050, 200], [300, 250]). // Desktop
@@ -71,45 +34,43 @@
 
             // ***************mobile*******************
 
-            var mappingEduMobile1 = googletag.sizeMapping().
+            var mappingEnterMobile1 = googletag.sizeMapping().
             addSize([640, 480], [300, 250]).
             addSize([0, 0], [300, 250]).addSize([1024, 768], []).
             addSize([1066, 868], []).
             addSize([992, 690], []).
             build();
-            var mappingEduMobile2 = googletag.sizeMapping().
+            var mappingEnterMobile2 = googletag.sizeMapping().
             addSize([0, 0], [300, 250]).addSize([1066, 868], []).
             addSize([992, 690], []).
             build();
-            var mappingEduMobile3 = googletag.sizeMapping().
+            var mappingEnterMobile3 = googletag.sizeMapping().
             addSize([0, 0], [300, 250]).addSize([1066, 868], []).
             addSize([992, 690], []).
             build();
             
-            
-            
-            
-            
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_education_top_980x280', [980, 280], 'div-gpt-ad-1512672349010-0').defineSizeMapping(mappingEdu1).setCollapseEmptyDiv(true).defineSizeMapping(mappingEdu1).
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_top_980x280', [980, 280], 'div-gpt-ad-1512672426487-0').defineSizeMapping(mappingEnter1).
             setCollapseEmptyDiv(true).addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_education_middle_650x90', [650, 90], 'div-gpt-ad-1512672326668-0').defineSizeMapping(mappingEdu2).setCollapseEmptyDiv(true).defineSizeMapping(mappingEdu2).
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_middle_650x90', [650, 90], 'div-gpt-ad-1512672394184-0').defineSizeMapping(mappingEnter2).
             setCollapseEmptyDiv(true).addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_education_bottom_650x90', [650, 90], 'div-gpt-ad-1512672303593-0').defineSizeMapping(mappingEdu3).setCollapseEmptyDiv(true).defineSizeMapping(mappingEdu3).
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_bottom_650x90', [650, 90], 'div-gpt-ad-1512672372665-0').defineSizeMapping(mappingEnter3).
             setCollapseEmptyDiv(true).addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_160x600', [160, 600], 'div-gpt-ad-1512623468858-0').defineSizeMapping(mappingEdu4).setCollapseEmptyDiv(true).defineSizeMapping(mappingEdu4).
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_160x600', [160, 600], 'div-gpt-ad-1512623468858-0').defineSizeMapping(mappingEnter4).
             setCollapseEmptyDiv(true).addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_global_rectangle_300x250', [300, 250], 'div-gpt-ad-1512625747787-0').defineSizeMapping(mappingEdu5).setCollapseEmptyDiv(true).defineSizeMapping(mappingEdu5).
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_global_rectangle_300x250', [300, 250], 'div-gpt-ad-1512625747787-0').defineSizeMapping(mappingEnter5).
             setCollapseEmptyDiv(true).addService(googletag.pubads());
-            
-            
-              //            ***************moblile*************
 
-              googletag.defineSlot('/73195129/Mobile-Education_top_rectangle', [300, 250], 'div-gpt-ad-1497328639788-3').defineSizeMapping(mappingEduMobile1).setCollapseEmptyDiv(true).addService(googletag.pubads());
-            googletag.defineSlot('/73195129/Mobile-Education_mid_rectangle', [300, 250], 'div-gpt-ad-1497328639788-1').defineSizeMapping(mappingEduMobile2).setCollapseEmptyDiv(true).addService(googletag.pubads());
-            googletag.defineSlot('/73195129/Mobile-Education_bottom_rectangle', [300, 250], 'div-gpt-ad-1497328639788-0').defineSizeMapping(mappingEduMobile3).setCollapseEmptyDiv(true).addService(googletag.pubads());
-            
-            
-            
+
+            //            ***************moblile*************
+
+            googletag.defineSlot('/73195129/Entertainment_top_rectangle', [300, 250], 'div-gpt-ad-1489389129439-0').defineSizeMapping(mappingEnterMobile1).
+            setCollapseEmptyDiv(true).
+            addService(googletag.pubads());
+            googletag.defineSlot('/73195129/Entertainment_middle_rectangle', [300, 250], 'div-gpt-ad-1489389184886-0').defineSizeMapping(mappingEnterMobile2).
+            setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/Entertainment_bottom_rectangle', [300, 250], 'div-gpt-ad-1489389238095-0').defineSizeMapping(mappingEnterMobile3).
+            setCollapseEmptyDiv(true).addService(googletag.pubads());
+
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
@@ -134,195 +95,10 @@
         <div id="status">&nbsp;</div>
     </div>
     <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-    <header id="header" class="">
-        <div id="header-container" class="container-fluid" data-spy="affix" data-offset-top="30">
-            <!-- Navbar fixed top -->
-            <nav id="main-navbar" class="navbar navbar-default navbar-static-top" role="navigation">
-
-                <div class="container">
-
-                    <div class="navbar-header">
-                        <div class="nav_main_search">
-                            <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
-                        </div>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/duwun-logo.png" alt="" />
-                        </a>
-                    </div>
-
-                    <div id="navbar" class="navbar-collapse collapse">
-
-                        <!-- Left nav -->
-                          <ul class="nav navbar-nav navbar-left">
-                            <li class="active hidden">
-                                <a href="index.html">Home</a>
-                            </li>
-                              <li>
-                                <a href="section_page_news.html">News <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="section_page_news.html">Local News</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_news.html">International News</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_news.html">Odd News</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="section_page_entertainment.html">Entertainment <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="section_page_entertainment.html">Local Celebrity</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_entertainment.html">International Celebrity</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_entertainment.html">Movie & Music</a>
-                                    </li>
-                                </ul>
-                            </li>
-                              <li>
-                                <a href="section_page_sports.html">Sports <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="section_page_sports.html">EPL</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_sports.html">International Sports</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_sports.html">Local Sports</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_sports.html">Other Sports</a>
-                                    </li>
-                                </ul>
-                            </li>
-                             <li>
-                                <a href="section_page_women.html">Women <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="section_page_women.html">Empowerment & Culture</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_women.html">Relationships</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_women.html">Beauty & Fashion</a>
-                                    </li>
-                                   
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="section_page_lifestyle.html">Lifestyle <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                   
-                                    <li>
-                                        <a href="section_page_news.html">Food & Travel</a>
-                                    </li>
-                                   
-                                    <li>
-                                        <a href="section_page_news.html">Health</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_news.html">Quiz</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        
-                            <li>
-                                <a href="section_page_tech.html">Tech <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="section_page_tech.html">Company News</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_tech.html">Gadget</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_tech.html">Mobile</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="section_page_education.html">Education <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="section_page_education.html">Local Education</a>
-                                    </li>
-                                    <li>
-                                        <a href="section_page_education.html">International Education</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="section_page.html" class="duwun-menu-tv">TV</a>
-                            </li>
-                            <li class="hidden" hidden><a href="#">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li class="dropdown-header">Nav header</li>
-                                    <li><a href="#">A sub menu <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>
-                                            <li><a href="#">One more link</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">A separated link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <!-- Right nav -->
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                            <li>
-                                <a class="icon8-a icons8-facebook-messenger" href="#">
-                                    <img src="assets/css/images/icons8-facebook-messenger.svg" class="svg icons8-Facebook-Messenger-Filled" />
-                                </a>
-                            </li>
-                            <li>
-                                <a class="icon8-a icons8-viber" href="#">
-                                    <img src="assets/css/images/icons8-viber.svg" class="svg icons8-Viber-Filled" />
-                                </a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                            <li class="nav_main_search">
-                                <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!--/.nav-collapse -->
-
-                    <div class="nav_search_form_wrapper">
-                        <form action="#" id="nav_search_form">
-                            <input class="search_bar" type="text" placeholder="Search here">
-                        </form>
-                    </div>
-                </div>
-
-                <!--/.container -->
-            </nav>
-        </div>
-    </header>
-
+   <?php include 'parts/nav.php'; ?>
     <div id="top-skyscraper" class="col-md-12 col-sm-12 hidden-md" data-spy="affix" data-offset-top="1" data-offset-bottom="700">
         <!-- /73195129/duwun_desktop_new_template_skyscraper_160x600 -->
-        <div id='div-gpt-ad-1512623468858-0'>
+        <div id='div-gpt-ad-1512623468858-0' style='height:600px; width:160px;'>
             <script>
                 googletag.cmd.push(function() {
                     googletag.display('div-gpt-ad-1512623468858-0');
@@ -362,12 +138,12 @@
 
             <div class="row row-ads-top-leader-board">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div id="top-leader-board" class="ads_center">
-                        <!-- /73195129/duwun_desktop_new_template_education_top_980x280 -->
-                        <div id='div-gpt-ad-1512672349010-0'>
+                    <div id="top-leader-board" class="non_mobile_widget ads_center">
+                        <!-- /73195129/duwun_desktop_new_template_entertainment_top_980x280 -->
+                        <div id='div-gpt-ad-1512672426487-0' style='height:280px; width:980px;'>
                             <script>
                                 googletag.cmd.push(function() {
-                                    googletag.display('div-gpt-ad-1512672349010-0');
+                                    googletag.display('div-gpt-ad-1512672426487-0');
                                 });
                             </script>
                         </div>
@@ -379,35 +155,39 @@
 -->
                     </div>
                 </div>
-                <div class="col-xs-12 mobile_only_ads">
-      
-                    <!-- /73195129/Mobile-Education_top_rectangle -->
-                    <div id='div-gpt-ad-1497328639788-3' style='text-align: center'>
+                <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
+                    <!--
+                    <a href="#">
+                        <img class="img-responsive" src="images/ad_300x250.png" alt="" />
+                    </a>
+-->
+                        <!-- /73195129/Entertainment_top_rectangle -->
+                    <div id='div-gpt-ad-1489389129439-0' style='text-align: center'>
                         <script>
                             googletag.cmd.push(function() {
-                                googletag.display('div-gpt-ad-1497328639788-3');
+                                googletag.display('div-gpt-ad-1489389129439-0');
                             });
-
                         </script>
                     </div>
-
                 </div>
             </div>
 
             <div class="row row_category_meta">
                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                     <div class="sponsor_wrapper">
-                        <a class="sponsored_by big" href="brand_page.html">
+                        <a class="sponsored_by big" href="brand_page.php">
                             <small>PRESENTED BY</small>
                             <strong>VIVO</strong>
                             <img src="images/sponsors/vivo-company-brand-logo-256x256.png" alt="VIVO" width="90" height="90" />
                         </a>
                     </div>
-                    <h1 class="category_heading"><a href="#">Education</a></h1>
+                    <h1 class="category_heading"><a href="#">ENTERTAINMENT</a></h1>
                     <div class="post-meta group sub_menu_wrapper">
                         <ul class="list list-inline">
-                            <li><a href="section_page.html">LOCAL EDUCATION</a></li>
-                            <li><a href="section_page.html">INTERNATIONAL EDUCATION</a></li>
+                            <li><a href="section_page.html">LOCAL CELEBRITY</a></li>
+                            <li><a href="section_page.html">INTERNATIONAL CELEBRITY</a></li>
+                            <li><a href="section_page.html">MOVIE & MUSIC</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -426,7 +206,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <strong class="teaser_category"><a href="section_page.html">Movie & Music</a></strong>
                             <h2 class="teaser_article_title">
-                                <a href="article_page.html">
+                                <a href="article_page.php">
                                     <span class="inverse_breaker">
                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                             </span> Coldplay အဖြဲ႔ရဲ႕ အဆိုေတာ္ ခရစၥမာတင္က သူပိုင္ဆုိင္သမွ်ထဲက ၁၀ ရာခိုင္ႏႈန္းကို ပရဟိတလုပ္ငန္းေပါင္းမ်ားစြာမွာ လွဴဒါန္းလိုက္တယ္လို႔ သိရပါတယ္။ အနည္းဆံုး ေဒၚလာ ၉ သန္းေလာက္ေတာ့ လွဴခဲ့ပံုပါပဲ။
@@ -443,15 +223,14 @@
             <div class="row row-ads-banner-730x90">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="banner_ads_wrapper non_mobile_widget ads_center">
-                        <!-- /73195129/duwun_desktop_new_template_education_middle_650x90 -->
-                        <div id='div-gpt-ad-1512672326668-0'>
+                        <!-- /73195129/duwun_desktop_new_template_entertainment_middle_650x90 -->
+                        <div id='div-gpt-ad-1512672394184-0' style='height:90px; width:650px;'>
                             <script>
                                 googletag.cmd.push(function() {
-                                    googletag.display('div-gpt-ad-1512672326668-0');
+                                    googletag.display('div-gpt-ad-1512672394184-0');
                                 });
                             </script>
                         </div>
-
                         <!--
                         <a href="#">
                             <img src="images/dfp/ad-banner-730x90.jpg" alt="" class="img-responsive" />
@@ -459,13 +238,23 @@
 -->
                     </div>
                 </div>
-<!--
-                <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
+                <div class="col-xs-12 mobile_only_ads">
+                    <!--
                     <a href="#">
                         <img class="img-responsive" src="images/ad_300x250.png" alt="" />
                     </a>
-                </div>
 -->
+                    <!-- /73195129/Entertainment_top_rectangle -->
+                    <div id='div-gpt-ad-1489389129439-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1489389129439-0');
+                            });
+                        </script>
+                    </div>
+
+
+                </div>
             </div>
 
             <div class="row" id="main-teasers" style="padding-bottom: 50px;">
@@ -480,21 +269,20 @@
                                 <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                 <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                             </div>
-                            <h2 class="teaser_article_title lead"><a href="article_page.html">ျမန္မာေငြ သိန္းတစ္ေထာင္ေက်ာ္အထိ ေပးရမယ့္ ေမဝယ္သာနဲ႔ မက္ဂရီေဂါရဲ႕ လက္ေဝွ႔ပြဲ လက္မွတ္</a></h2>
+                            <h2 class="teaser_article_title lead"><a href="article_page.php">ျမန္မာေငြ သိန္းတစ္ေထာင္ေက်ာ္အထိ ေပးရမယ့္ ေမဝယ္သာနဲ႔ မက္ဂရီေဂါရဲ႕ လက္ေဝွ႔ပြဲ လက္မွတ္</a></h2>
                             <p>စူပါေမာ္ဒယ္ ကန္ဒဲလ္ဟာ သူမတင္လိုက္တဲ့ ဓာတ္ပံုေၾကာင့္ ေဝဖန္ခံလုိက္ရတာပါ။ ေဂါင္ယူးနဲ႔ ေတာ္ေတာ္ေလး တူတာပါ။</p>
                             <span class="article_author">By Duwun Team</span>
                         </article>
                     </div>
                     <div class="banner_ads_wrapper non_mobile_widget ads_center">
-                        <!-- /73195129/duwun_desktop_new_template_education_bottom_650x90 -->
-                        <div id='div-gpt-ad-1512672303593-0'>
+                        <!-- /73195129/duwun_desktop_new_template_entertainment_bottom_650x90 -->
+                        <div id='div-gpt-ad-1512672372665-0' style='height:90px; width:650px;'>
                             <script>
                                 googletag.cmd.push(function() {
-                                    googletag.display('div-gpt-ad-1512672303593-0');
+                                    googletag.display('div-gpt-ad-1512672372665-0');
                                 });
                             </script>
                         </div>
-
 
                         <!--
                         <a href="#">
@@ -512,25 +300,25 @@
                                     <!--<i class="fa fa-angle-right"></i>-->
                                     <article class="trendiing_article">
                                         <strong class="teaser_category"><a href="section_page_lifestyle.html">Relationship</a></strong>
-                                        <div class="trendiing_title"><a href="article_page.html">ဒုကၡသည္အေၾကာင္းျပဳကာ ႏိုင္ငံေရးစြက္ဖက္မႈေတြကို ကာကြယ္မယ္လို႔ ဗိုလ္ခ်ဳပ္ႀကီးမင္းေအာင္လႈိင္ ေျပာ</a></div>
+                                        <div class="trendiing_title"><a href="article_page.php">ဒုကၡသည္အေၾကာင္းျပဳကာ ႏိုင္ငံေရးစြက္ဖက္မႈေတြကို ကာကြယ္မယ္လို႔ ဗိုလ္ခ်ဳပ္ႀကီးမင္းေအာင္လႈိင္ ေျပာ</a></div>
                                     </article>
                                 </li>
                                 <li>
                                     <article class="trendiing_article">
                                         <strong class="teaser_category"><a href="section_page_lifestyle.html">Health</a></strong>
-                                        <div class="trendiing_title"><a href="article_page.html">လူနဲ႔ ကြန္ပ်ဴတာ တိုက္ရိုက္ဆက္သြယ္ႏိုင္မယ့္ ကုမၸဏီကို တည္ေထာင္လိုက္တဲ့ အီလြန္မတ္စ္</a></div>
+                                        <div class="trendiing_title"><a href="article_page.php">လူနဲ႔ ကြန္ပ်ဴတာ တိုက္ရိုက္ဆက္သြယ္ႏိုင္မယ့္ ကုမၸဏီကို တည္ေထာင္လိုက္တဲ့ အီလြန္မတ္စ္</a></div>
                                     </article>
                                 </li>
                                 <li>
                                     <article class="trendiing_article">
                                         <strong class="teaser_category"><a href="section_page_lifestyle.html">Lifestyle</a></strong>
-                                        <div class="trendiing_title"><a href="article_page.html">ေမြးရပ္ေျမ ခ်ီလီမွာ ဆန္းခ်က္ဇ္ရဲ႕ ပံုတူဂုဏ္ျပဳရုပ္တု ဖြင့္လွစ္</a></div>
+                                        <div class="trendiing_title"><a href="article_page.php">ေမြးရပ္ေျမ ခ်ီလီမွာ ဆန္းခ်က္ဇ္ရဲ႕ ပံုတူဂုဏ္ျပဳရုပ္တု ဖြင့္လွစ္</a></div>
                                     </article>
                                 </li>
                                 <li>
                                     <article class="trendiing_article">
                                         <strong class="teaser_category"><a href="section_page_tech.html">Tech</a></strong>
-                                        <div class="trendiing_title"><a href="article_page.html">တကၠသိုလ္တက္ဖို႔ ျပင္ဆင္ေနတဲ့ ဘရြတ္ကလင္းဘက္ခမ္း</a></div>
+                                        <div class="trendiing_title"><a href="article_page.php">တကၠသိုလ္တက္ဖို႔ ျပင္ဆင္ေနတဲ့ ဘရြတ္ကလင္းဘက္ခမ္း</a></div>
                                     </article>
                                 </li>
                             </ul>
@@ -555,25 +343,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xs-12 mobile_only_ads">
 <!--
-                <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
                     <a href="#">
                         <img class="img-responsive" src="images/ad_300x250.png" alt="" />
                     </a>
-                </div>
 -->
-                  <div class="col-xs-12 mobile_only_ads">
-      
-                    <!-- /73195129/Mobile-Education_mid_rectangle -->
-                    <div id='div-gpt-ad-1497328639788-1' style='text-align: center'>
-                        <script>
-                            googletag.cmd.push(function() {
-                                googletag.display('div-gpt-ad-1497328639788-1');
-                            });
-
-                        </script>
-                    </div>
-
+                     <!-- /73195129/Entertainment_middle_rectangle -->
+                            <div id='div-gpt-ad-1489389184886-0' style='text-align: center'>
+                                <script>
+                                    googletag.cmd.push(function() {
+                                        googletag.display('div-gpt-ad-1489389184886-0');
+                                    });
+                                </script>
+                            </div>
+                  
                 </div>
             </div>
 
@@ -590,7 +374,7 @@
                                     <strong class="teaser_category"><a href="section_page.html">Tech</a></strong>
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
-                                    <a class="sponsored_by compact" href="brand_page.html">
+                                    <a class="sponsored_by compact" href="brand_page.php">
                                         <small>Sponsored By</small>
                                         <strong>BMW</strong>                                        
                                         <span class="sponsor_img frame-square">
@@ -600,7 +384,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">ဖိလစ္ပိုင္မွာ ၾကက္ေၾကာ္ေရာင္းေနတဲ့ ေဂါင္ယူး</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">ဖိလစ္ပိုင္မွာ ၾကက္ေၾကာ္ေရာင္းေနတဲ့ ေဂါင္ယူး</a></h2>
                                 <p>ေဂါင္ယူးနဲ႔ ေတာ္ေတာ္ေလး တူတာပါ။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -615,7 +399,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">အရက္မေသာက္တတ္ဘူးဆိုတဲ့ ေက်ာ္ေက်ာ္ဗို</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">အရက္မေသာက္တတ္ဘူးဆိုတဲ့ ေက်ာ္ေက်ာ္ဗို</a></h2>
                                 <p>အထင္လြဲေနတဲ့ ပရိသတ္ေတြကို ရွင္းျပလိုက္တာ ျဖစ္ပါတယ္။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -630,7 +414,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">အရမ္းလွေနေပမဲ့ ပံုသ႑ာန္မမွန္တဲ့ ခ်က္ေၾကာင့္ ကဲ့ရဲ႕ခံလုိက္ရတဲ့ ကန္ဒဲလ္ဂ်န္နာ</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">အရမ္းလွေနေပမဲ့ ပံုသ႑ာန္မမွန္တဲ့ ခ်က္ေၾကာင့္ ကဲ့ရဲ႕ခံလုိက္ရတဲ့ ကန္ဒဲလ္ဂ်န္နာ</a></h2>
                                 <p>စူပါေမာ္ဒယ္ ကန္ဒဲလ္ဟာ သူမတင္လိုက္တဲ့ ဓာတ္ပံုေၾကာင့္ ေဝဖန္ခံလုိက္ရတာပါ။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -645,7 +429,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">ျမန္မာေငြ သိန္းတစ္ေထာင္ေက်ာ္အထိ ေပးရမယ့္ ေမဝယ္သာနဲ႔ မက္ဂရီေဂါရဲ႕ လက္ေဝွ႔ပြဲ လက္မွတ္</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">ျမန္မာေငြ သိန္းတစ္ေထာင္ေက်ာ္အထိ ေပးရမယ့္ ေမဝယ္သာနဲ႔ မက္ဂရီေဂါရဲ႕ လက္ေဝွ႔ပြဲ လက္မွတ္</a></h2>
                                 <p>လက္မွတ္ေစ်းႏႈန္းမ်ားေပမယ့္ လက္မွတ္က သိပ္မက်န္ေတာ့ဘူးလို႔ သိရပါတယ္။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -660,7 +444,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">ရီးရဲလ္မက္ဒရစ္ကို စြန္႔ခြာရင္ ေရာ္နယ္ဒိုေရာက္ႏိုင္ေခ်ရွိတဲ့ အသင္း ငါးသင္း</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">ရီးရဲလ္မက္ဒရစ္ကို စြန္႔ခြာရင္ ေရာ္နယ္ဒိုေရာက္ႏိုင္ေခ်ရွိတဲ့ အသင္း ငါးသင္း</a></h2>
                                 <p>ေရာ္နယ္ဒိုဟာ စပိန္မွာ အဆင္မေျပမႈေတြ ဆက္တိုက္ႀကံဳေတြ႔ေနရပါတယ္။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -681,19 +465,21 @@
 
         </div>
         <div class="container">
-              <div class="col-xs-12 mobile_only_ads">
-      
-                    <!-- /73195129/Mobile-Education_bottom_rectangle -->
-                    <div id='div-gpt-ad-1497328639788-0' style='text-align: center'>
+            <div class="col-xs-12 mobile_only_ads">
+<!--
+                <a href="#">
+                    <img class="img-responsive" src="images/ad_300x250.png" alt="" />
+                </a>
+-->
+                 <!-- /73195129/Entertainment_bottom_rectangle -->
+                    <div id='div-gpt-ad-1489389238095-0' style='text-align: center'>
                         <script>
                             googletag.cmd.push(function() {
-                                googletag.display('div-gpt-ad-1497328639788-0');
+                                googletag.display('div-gpt-ad-1489389238095-0');
                             });
-
                         </script>
                     </div>
-
-                </div>
+            </div>
             <div class="row" id="columnist-mega-teaser">
                 <div class="col-md-3 col-sm-2 col-xs-2 quote left">
                     &ldquo;
@@ -721,7 +507,7 @@
                                     <strong class="teaser_category"><a href="section_page.html">Tech</a></strong>
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
-                                    <a class="sponsored_by compact" href="brand_page.html">
+                                    <a class="sponsored_by compact" href="brand_page.php">
                                         <small>Sponsored By</small>
                                         <strong>JACOB'S CREEK</strong>
                                         <span class="sponsor_img frame-square">
@@ -731,7 +517,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">ဖိလစ္ပိုင္မွာ ၾကက္ေၾကာ္ေရာင္းေနတဲ့ ေဂါင္ယူး</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">ဖိလစ္ပိုင္မွာ ၾကက္ေၾကာ္ေရာင္းေနတဲ့ ေဂါင္ယူး</a></h2>
                                 <p>ေဂါင္ယူးနဲ႔ ေတာ္ေတာ္ေလး တူတာပါ။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -746,7 +532,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">အရက္မေသာက္တတ္ဘူးဆိုတဲ့ ေက်ာ္ေက်ာ္ဗို</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">အရက္မေသာက္တတ္ဘူးဆိုတဲ့ ေက်ာ္ေက်ာ္ဗို</a></h2>
                                 <p>အထင္လြဲေနတဲ့ ပရိသတ္ေတြကို ရွင္းျပလိုက္တာ ျဖစ္ပါတယ္။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -761,7 +547,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">အရမ္းလွေနေပမဲ့ ပံုသ႑ာန္မမွန္တဲ့ ခ်က္ေၾကာင့္ ကဲ့ရဲ႕ခံလုိက္ရတဲ့ ကန္ဒဲလ္ဂ်န္နာ</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">အရမ္းလွေနေပမဲ့ ပံုသ႑ာန္မမွန္တဲ့ ခ်က္ေၾကာင့္ ကဲ့ရဲ႕ခံလုိက္ရတဲ့ ကန္ဒဲလ္ဂ်န္နာ</a></h2>
                                 <p>စူပါေမာ္ဒယ္ ကန္ဒဲလ္ဟာ သူမတင္လိုက္တဲ့ ဓာတ္ပံုေၾကာင့္ ေဝဖန္ခံလုိက္ရတာပါ။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -776,7 +562,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">ျမန္မာေငြ သိန္းတစ္ေထာင္ေက်ာ္အထိ ေပးရမယ့္ ေမဝယ္သာနဲ႔ မက္ဂရီေဂါရဲ႕ လက္ေဝွ႔ပြဲ လက္မွတ္</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">ျမန္မာေငြ သိန္းတစ္ေထာင္ေက်ာ္အထိ ေပးရမယ့္ ေမဝယ္သာနဲ႔ မက္ဂရီေဂါရဲ႕ လက္ေဝွ႔ပြဲ လက္မွတ္</a></h2>
                                 <p>လက္မွတ္ေစ်းႏႈန္းမ်ားေပမယ့္ လက္မွတ္က သိပ္မက်န္ေတာ့ဘူးလို႔ သိရပါတယ္။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -791,7 +577,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">ရီးရဲလ္မက္ဒရစ္ကို စြန္႔ခြာရင္ ေရာ္နယ္ဒိုေရာက္ႏိုင္ေခ်ရွိတဲ့ အသင္း ငါးသင္း</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">ရီးရဲလ္မက္ဒရစ္ကို စြန္႔ခြာရင္ ေရာ္နယ္ဒိုေရာက္ႏိုင္ေခ်ရွိတဲ့ အသင္း ငါးသင္း</a></h2>
                                 <p>ေရာ္နယ္ဒိုဟာ စပိန္မွာ အဆင္မေျပမႈေတြ ဆက္တိုက္ႀကံဳေတြ႔ေနရပါတယ္။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -812,7 +598,7 @@
                                     <strong class="teaser_category"><a href="section_page.html">Tech</a></strong>
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
-                                    <a class="sponsored_by compact" href="brand_page.html">
+                                    <a class="sponsored_by compact" href="brand_page.php">
                                         <small>Sponsored By</small>
                                         <strong>JACOB'S CREEK</strong>
                                         <span class="sponsor_img frame-square">
@@ -822,7 +608,7 @@
                                         </span>
                                     </a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">ဖိလစ္ပိုင္မွာ ၾကက္ေၾကာ္ေရာင္းေနတဲ့ ေဂါင္ယူး</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">ဖိလစ္ပိုင္မွာ ၾကက္ေၾကာ္ေရာင္းေနတဲ့ ေဂါင္ယူး</a></h2>
                                 <p>ေဂါင္ယူးနဲ႔ ေတာ္ေတာ္ေလး တူတာပါ။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -837,7 +623,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">အရက္မေသာက္တတ္ဘူးဆိုတဲ့ ေက်ာ္ေက်ာ္ဗို</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">အရက္မေသာက္တတ္ဘူးဆိုတဲ့ ေက်ာ္ေက်ာ္ဗို</a></h2>
                                 <p>အထင္လြဲေနတဲ့ ပရိသတ္ေတြကို ရွင္းျပလိုက္တာ ျဖစ္ပါတယ္။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -852,7 +638,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">အရမ္းလွေနေပမဲ့ ပံုသ႑ာန္မမွန္တဲ့ ခ်က္ေၾကာင့္ ကဲ့ရဲ႕ခံလုိက္ရတဲ့ ကန္ဒဲလ္ဂ်န္နာ</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">အရမ္းလွေနေပမဲ့ ပံုသ႑ာန္မမွန္တဲ့ ခ်က္ေၾကာင့္ ကဲ့ရဲ႕ခံလုိက္ရတဲ့ ကန္ဒဲလ္ဂ်န္နာ</a></h2>
                                 <p>စူပါေမာ္ဒယ္ ကန္ဒဲလ္ဟာ သူမတင္လိုက္တဲ့ ဓာတ္ပံုေၾကာင့္ ေဝဖန္ခံလုိက္ရတာပါ။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -867,7 +653,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">ျမန္မာေငြ သိန္းတစ္ေထာင္ေက်ာ္အထိ ေပးရမယ့္ ေမဝယ္သာနဲ႔ မက္ဂရီေဂါရဲ႕ လက္ေဝွ႔ပြဲ လက္မွတ္</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">ျမန္မာေငြ သိန္းတစ္ေထာင္ေက်ာ္အထိ ေပးရမယ့္ ေမဝယ္သာနဲ႔ မက္ဂရီေဂါရဲ႕ လက္ေဝွ႔ပြဲ လက္မွတ္</a></h2>
                                 <p>လက္မွတ္ေစ်းႏႈန္းမ်ားေပမယ့္ လက္မွတ္က သိပ္မက်န္ေတာ့ဘူးလို႔ သိရပါတယ္။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
@@ -882,7 +668,7 @@
                                     <span class="time"><time itemprop="datePublished" datetime="26.07.2017">26.07.2017</time></span>
                                     <a href="#" class="share social_share" data-toggle="modal" data-target=".bs-social-modal-sm-42">Share</a>
                                 </div>
-                                <h2 class="teaser_article_title"><a href="article_page.html">ရီးရဲလ္မက္ဒရစ္ကို စြန္႔ခြာရင္ ေရာ္နယ္ဒိုေရာက္ႏိုင္ေခ်ရွိတဲ့ အသင္း ငါးသင္း</a></h2>
+                                <h2 class="teaser_article_title"><a href="article_page.php">ရီးရဲလ္မက္ဒရစ္ကို စြန္႔ခြာရင္ ေရာ္နယ္ဒိုေရာက္ႏိုင္ေခ်ရွိတဲ့ အသင္း ငါးသင္း</a></h2>
                                 <p>ေရာ္နယ္ဒိုဟာ စပိန္မွာ အဆင္မေျပမႈေတြ ဆက္တိုက္ႀကံဳေတြ႔ေနရပါတယ္။</p>
                                 <span class="article_author">By Duwun Team</span>
                             </article>
