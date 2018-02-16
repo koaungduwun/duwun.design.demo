@@ -1311,7 +1311,7 @@ section .dw-widget-teasers-video .playerbox .video-js button.vjs-big-play-button
   top: 100px;
 }
 @media (max-width: 1320px) {
-  /* line 1190, ../sass/styles.scss */
+  /* line 1191, ../sass/styles.scss */
   #top-skyscraper {
     display: none;
   }
@@ -2996,6 +2996,7 @@ i.fa.fa-temp-messenger-filled::before {
 /* line 2654, ../sass/styles.scss */
 #sidebarOverlay {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -3040,27 +3041,27 @@ i.fa.fa-temp-messenger-filled::before {
     visibility: hidden;
   }
 }
-/* line 2705, ../sass/styles.scss */
+/* line 2706, ../sass/styles.scss */
 .fade-out {
   -webkit-animation: fadeOut 0.3s linear;
   animation: fadeOut 0.3s linear;
 }
 
-/* line 2710, ../sass/styles.scss */
+/* line 2711, ../sass/styles.scss */
 .fade-in {
   visibility: visible !important;
   -webkit-animation: fadeIn 0.3s linear;
   animation: fadeIn 0.3s linear;
 }
 
-/* line 2723, ../sass/styles.scss */
+/* line 2724, ../sass/styles.scss */
 a[title="Wedding"] {
   background-image: url(https://www.marry.com.mm/wp-content/plugins/ringier-v1/app/Views/_assets/images/img-marry-logo.svg);
   background-repeat: no-repeat;
   background-position: 64% center;
 }
 
-/* line 2728, ../sass/styles.scss */
+/* line 2729, ../sass/styles.scss */
 a[title="Baby"] {
   background-image: url(https://www.marry.com.mm/wp-content/plugins/ringier-v1/app/Views/_assets/images/img-kalay-logo.svg);
   background-repeat: no-repeat;

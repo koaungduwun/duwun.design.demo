@@ -21,16 +21,20 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/theme.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.smartmenus.bootstrap.css" />
-    <!--[if lt IE 9]>
-  <script src="assets/js/html5shiv.min.js"></script>
-  <script src="assets/js/respond.min.js"></script>
-  <![endif]-->
-    <link rel="icon" href="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-160x160.png" sizes="32x32">
-    <link rel="icon" href="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-250x250.png" sizes="192x192">
-    <link rel="apple-touch-icon-precomposed" href="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-250x250.png">
-    <meta name="msapplication-TileImage" content="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-300x300.png">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/mobile-nav.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+
+    <link rel="icon" href="assets/images/cropped-duwun-logo-square-160x160.png" sizes="32x32">
+    <link rel="icon" href="assets/images/cropped-duwun-logo-square-250x250.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/cropped-duwun-logo-square-250x250.png">
+
+    <meta name="msapplication-TileImage" content="assets/images/cropped-duwun-logo-square-300x300.png">
+
+    <script type='text/javascript' src="assets/js/jquery-1.12.4.js"></script>
     <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
 
     <script>
@@ -125,7 +129,274 @@
         <div id="status">&nbsp;</div>
     </div>
     <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-    <header id="header" class="">
+   <header id="header" class="">
+        <div id="blick-app-menu">
+
+            <div id="sidebarOverlay" onclick="closeNav()"></div>
+            <div id="side-menu-top-container">
+                <div id="side-menu-backdrop"></div>
+                <div id="side-menu-wrapper-web">
+                    <div class="main-view-section-container">
+                        <div class="side-menu-container">
+                            <div class="side-menu-item"><i class="icon blick-home"></i><a class="title" href="http://www.duwun.com.mm/">Home</a></div>
+                            <div class="side-menu-item"><i class="icon blick-navbar-search"></i>
+                                <a class="title" href="http://www.duwun.com.mm/search/">Search</a>
+                            </div>
+                        </div>
+                        <div class="side-menu-container">
+                            <div class="menu-section simple">
+                                <div class="side-menu-title"></div>
+
+                                <div class="menu-items">
+                                    <div class="collapsible-container collapsible-border simple">
+                                        <div class="collapsible-header">
+                                            <a class="collapsible-title simple closed" href="section_page_news.html">News</a>
+                                            <div class="blick-forward closed"></div>
+                                        </div>
+                                        <div class="collapsible-content closed">
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_news.html">Local News</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_news.html">International News</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_news.html">Odd News</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapsible-container collapsible-border simple">
+                                        <div class="collapsible-header">
+                                            <a class="collapsible-title simple closed" href="section_page_entertainment.html">Entertainment</a>
+                                            <div class="blick-forward closed"></div>
+                                        </div>
+                                        <div class="collapsible-content closed">
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_entertainment.html">Local Celebrity</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_entertainment.html">International Celebrity</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_entertainment.html">Movie &amp; Music</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_entertainment.html">Cele YatKwat</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapsible-container collapsible-border simple">
+                                        <div class="collapsible-header">
+                                            <a class="collapsible-title simple closed" href="section_page_sports.html">Sports</a>
+                                            <div class="blick-forward closed"></div>
+                                        </div>
+                                        <div class="collapsible-content closed">
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_sports.html">EPL</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_sports.html">International Sports</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_sports.html">Local Sports</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_sports.html">Other Sports</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a href="section_page_sports.html" class="title" title="29th SEA Games">29th SEA Games</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="collapsible-container collapsible-border simple">
+                                        <div class="collapsible-header">
+                                            <a class="collapsible-title simple closed" href="section_page_women.html">Women</a>
+                                            <div class="blick-forward closed"></div>
+                                        </div>
+                                        <div class="collapsible-content closed">
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a href="section_page_women.html" class="title" title="Empowerment &amp; culture">Empowerment &amp; culture</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a href="section_page_women.html" class="title" title="Relationships">Relationships</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a href="section_page_women.html" class="title" title="Beauty &amp; Fashion">Beauty &amp; Fashion</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a href="https://www.marry.com.mm/" class="title" title="Wedding" target="_blank">Wedding</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a href="https://www.kalay.com.mm/" class="title" title="Baby" target="_blank">Baby</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapsible-container collapsible-border simple">
+                                        <div class="collapsible-header">
+                                            <a class="collapsible-title simple closed" href="section_page_lifestyle.html">Lifestyle</a>
+                                            <div class="blick-forward closed"></div>
+                                        </div>
+                                        <div class="collapsible-content closed">
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+ <a href="section_page_lifestyle.html" class="title" title="Food &amp; Recipe">Food &amp; Recipe</a>                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                        <a href="section_page_lifestyle.html" class="title" title="Review">Review</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                        <a href="section_page_lifestyle.html" class="title" title="Health">Health</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                          <a href="section_page_lifestyle.html" class="title" title="Travel">Travel</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                           <a href="http://quiz.duwun.com.mm" class="title" title="Quiz">Quiz</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                            <a href="section_page_lifestyle.html" class="title" title="Juniors">Juniors</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                
+                                    <div class="collapsible-container collapsible-border simple">
+                                        <div class="collapsible-header">
+                                            <a class="collapsible-title simple closed" href="section_page_tech.html">Tech</a>
+                                            <div class="blick-forward closed"></div>
+                                        </div>
+                                        <div class="collapsible-content closed">
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                 <a href="section_page_tech.html" class="title" title="Tech News">Tech News</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                            <a href="section_page_tech.html" class="title" title="Startups">Startups</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                 <a href="section_page_tech.html" class="title" title="Mobile">Mobile</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                 <a href="section_page_tech.html" class="title" title="Review">Review</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                   <a href="section_page_tech.html" class="title" title="Local tech in English">Local tech in English</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="collapsible-container collapsible-border simple">
+                                        <div class="collapsible-header">
+                                            <a class="collapsible-title simple closed" href="section_page_education.html">Education</a>
+                                            <div class="blick-forward closed"></div>
+                                        </div>
+                                        <div class="collapsible-content closed">
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_education.html">Local Education</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_education.html">International Education</a>
+                                            </div>
+                                            <div class="side-menu-item">
+                                                <i class="icon without-icon"></i>
+                                                <a class="title" href="section_page_education.html">Career</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div id="web-nav-bar" class="menu-active">
+                    <div id="side-menu-icon-balance">
+                        <p class="site-title"><a class="custom-logo-link" href="index.html" rel="home" title="Duwun| Home page"><img src="assets/images/duwun-mobile-logo-nff.png" alt="Duwun"></a></p>
+                    </div>
+                    <div id="nav-bar-title" class="text">Duwun</div>
+                    <span id="nav-bar-menu-button" class="blick-navbar-search-menu" onclick="toggleNav()"></span>
+                </div>
+            </div>
+
+            <script>
+                function openNav() {
+                    document.getElementById("side-menu-wrapper-web").className = "active";
+                    document.getElementById("sidebarOverlay").className = "fade-in";
+                }
+
+                function closeNav() {
+                    document.getElementById("side-menu-wrapper-web").className = "";
+                    document.getElementById("sidebarOverlay").className = "fade-out";
+                }
+
+                function toggleNav() {
+                    if (document.getElementById("side-menu-wrapper-web").classList.contains('active')) {
+                        closeNav();
+                    } else {
+                        openNav();
+                    }
+                }
+
+                function openCollapsible() {
+                    that.className = "active";
+                }
+
+                function closeCollapsible() {
+                    that.className = "";
+                }
+
+                function toggleCollapsible(that) {
+                    if (that.classList.contains('open')) {
+                        closeCollapsible(that);
+                    } else {
+                        openCollapsible(that);
+                    }
+                }
+                jQuery(document).ready(function($) {
+                    $(".collapsible-header .blick-forward").on("click", function() {
+                        var _parent = $(this).closest('.collapsible-container');
+                        _parent.find(".collapsible-title").toggleClass("closed open");
+                        _parent.find(".blick-forward").toggleClass("closed open");
+                        _parent.find(".collapsible-content").toggleClass("closed open");
+                    });
+                });
+
+            </script>
+        </div>
+        <!-- // End blick-app-menu -->
+
         <div id="header-container" class="container-fluid" data-spy="affix" data-offset-top="30">
             <!-- Navbar fixed top -->
             <nav id="main-navbar" class="navbar navbar-default navbar-static-top" role="navigation">
@@ -133,10 +404,12 @@
                 <div class="container">
 
                     <div class="navbar-header">
+                        <!--
                         <div class="nav_main_search">
                             <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
                         </div>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <button type="button" class="navbar-toggle collapsed main-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+-->
                         <a class="navbar-brand" href="index.html">
                             <img src="images/duwun-logo.png" alt="" />
                         </a>
@@ -145,11 +418,11 @@
                     <div id="navbar" class="navbar-collapse collapse">
 
                         <!-- Left nav -->
-                         <ul class="nav navbar-nav navbar-left">
+                        <ul class="nav navbar-nav navbar-left">
                             <li class="active hidden">
                                 <a href="index.html">Home</a>
                             </li>
-                              <li>
+                            <li>
                                 <a href="section_page_news.html">News <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
@@ -175,9 +448,11 @@
                                     <li>
                                         <a href="section_page_entertainment.html">Movie & Music</a>
                                     </li>
+                                    <li>
+                                        <a href="section_page_entertainment.html" class="last " title="Cele YatKwat">Cele YatKwat</a></li>
                                 </ul>
                             </li>
-                              <li>
+                            <li>
                                 <a href="section_page_sports.html">Sports <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
@@ -192,9 +467,11 @@
                                     <li>
                                         <a href="section_page_sports.html">Other Sports</a>
                                     </li>
+                                    <li>
+                                        <a href="section_page_sports.html" class="last " title="29th SEA Games">29th SEA Games</a></li>
                                 </ul>
                             </li>
-                             <li>
+                            <li>
                                 <a href="section_page_women.html">Women <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
@@ -206,38 +483,48 @@
                                     <li>
                                         <a href="section_page_women.html">Beauty & Fashion</a>
                                     </li>
-                                   
+                                    <li>
+                                        <a title="Wedding" target="_blank" href="https://www.marry.com.mm/">Wedding</a>
+                                    </li>
+                                    <li>
+                                        <a title="Baby" target="_blank" href="https://www.kalay.com.mm/">Baby</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="section_page_lifestyle.html">Lifestyle <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                   
+
                                     <li>
-                                        <a href="section_page_news.html">Food & Travel</a>
-                                    </li>
-                                   
+                                        <a href="section_page_lifestyle.html" class="first " title="Food &amp; Recipe">Food &amp; Recipe</a></li>
+
                                     <li>
-                                        <a href="section_page_news.html">Health</a>
-                                    </li>
+                                        <a href="section_page_lifestyle.html" class=" " title="Review">Review</a></li>
                                     <li>
-                                        <a href="section_page_news.html">Quiz</a>
-                                    </li>
+                                        <a href="section_page_lifestyle.html" class=" " title="Health">Health</a></li>
+                                    <li>
+                                        <a href="section_page_lifestyle.html" class=" " title="Travel">Travel</a></li>
+                                    <li>
+                                        <a href="section_page_lifestyle.html" class=" " title="Quiz">Quiz</a></li>
+                                    <li>
+                                        <a href="section_page_lifestyle.html" class="last " title="Juniors">Juniors</a></li>
                                 </ul>
+                                
                             </li>
-                        
+
                             <li>
                                 <a href="section_page_tech.html">Tech <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="section_page_tech.html">Company News</a>
-                                    </li>
+                                        <a href="section_page_tech.html" class="first " title="Tech News">Tech News</a></li>
                                     <li>
-                                        <a href="section_page_tech.html">Gadget</a>
-                                    </li>
+                                        <a href="section_page_tech.html" class=" " title="Startups">Startups</a></li>
                                     <li>
-                                        <a href="section_page_tech.html">Mobile</a>
-                                    </li>
+                                        <a href="section_page_tech.html" class=" " title="Mobile">Mobile</a></li>
+                                    <li>
+                                        <a href="section_page_tech.html" class=" " title="Review">Review</a></li>
+                                    <li>
+                                        <a href="section_page_tech.html" class="last " title="Local tech in English">Local tech in English</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -249,30 +536,12 @@
                                     <li>
                                         <a href="section_page_education.html">International Education</a>
                                     </li>
+                                    <li>
+										<a href="section_page_education.html" class="last " title="Career">Career</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="section_page.html" class="duwun-menu-tv">TV</a>
-                            </li>
-                            <li class="hidden" hidden><a href="#">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li class="dropdown-header">Nav header</li>
-                                    <li><a href="#">A sub menu <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>
-                                            <li><a href="#">One more link</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">A separated link</a></li>
-                                </ul>
-                            </li>
+
+                        
                         </ul>
 
                         <!-- Right nav -->
@@ -308,7 +577,9 @@
 
                 <!--/.container -->
             </nav>
+
         </div>
+
     </header>
 
     <div id="top-skyscraper" class="col-md-12 col-sm-12 hidden-md" data-spy="affix" data-offset-top="1" data-offset-bottom="700">
