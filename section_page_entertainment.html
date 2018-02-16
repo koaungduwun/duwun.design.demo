@@ -37,14 +37,74 @@
         var googletag = googletag || {};
         googletag.cmd = googletag.cmd || [];
     </script>
-
+   
     <script>
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_top_980x280', [980, 280], 'div-gpt-ad-1512672426487-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_middle_650x90', [650, 90], 'div-gpt-ad-1512672394184-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_bottom_650x90', [650, 90], 'div-gpt-ad-1512672372665-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_160x600', [160, 600], 'div-gpt-ad-1512623468858-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_global_rectangle_300x250', [300, 250], 'div-gpt-ad-1512625747787-0').addService(googletag.pubads());
+            googletag.cmd.push(function() {
+                      var mappingEnter1 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 600], [980, 280]).
+            addSize([1050, 200], [980, 280]). // Desktop
+            build();
+            var mappingEnter2 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [650, 90]).
+            addSize([1050, 200], [650, 90]). // Desktop
+            build();
+            var mappingEnter3 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [650, 90]).
+            addSize([1050, 200], [650, 90]). // Desktop
+            build();
+            var mappingEnter4 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [160, 600]).
+            addSize([1050, 200], [160, 600]). // Desktop
+            build();
+            var mappingEnter5 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [300, 250]).
+            addSize([1050, 200], [300, 250]). // Desktop
+            build();
+
+            // ***************mobile*******************
+
+            var mappingEnterMobile1 = googletag.sizeMapping().
+            addSize([640, 480], [300, 250]).
+            addSize([0, 0], [300, 250]).addSize([1024, 768], []).
+            addSize([1066, 868], []).
+            addSize([992, 690], []).
+            build();
+            var mappingEnterMobile2 = googletag.sizeMapping().
+            addSize([0, 0], [300, 250]).addSize([1066, 868], []).
+            addSize([992, 690], []).
+            build();
+            var mappingEnterMobile3 = googletag.sizeMapping().
+            addSize([0, 0], [300, 250]).addSize([1066, 868], []).
+            addSize([992, 690], []).
+            build();
+            
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_top_980x280', [980, 280], 'div-gpt-ad-1512672426487-0').defineSizeMapping(mappingEnter1).
+            setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_middle_650x90', [650, 90], 'div-gpt-ad-1512672394184-0').defineSizeMapping(mappingEnter2).
+            setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_bottom_650x90', [650, 90], 'div-gpt-ad-1512672372665-0').defineSizeMapping(mappingEnter3).
+            setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_160x600', [160, 600], 'div-gpt-ad-1512623468858-0').defineSizeMapping(mappingEnter4).
+            setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_global_rectangle_300x250', [300, 250], 'div-gpt-ad-1512625747787-0').defineSizeMapping(mappingEnter5).
+            setCollapseEmptyDiv(true).addService(googletag.pubads());
+
+
+            //            ***************moblile*************
+
+            googletag.defineSlot('/73195129/Entertainment_top_rectangle', [300, 250], 'div-gpt-ad-1489389129439-0').defineSizeMapping(mappingEnterMobile1).
+            setCollapseEmptyDiv(true).
+            addService(googletag.pubads());
+            googletag.defineSlot('/73195129/Entertainment_middle_rectangle', [300, 250], 'div-gpt-ad-1489389184886-0').defineSizeMapping(mappingEnterMobile2).
+            setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/Entertainment_bottom_rectangle', [300, 250], 'div-gpt-ad-1489389238095-0').defineSizeMapping(mappingEnterMobile3).
+            setCollapseEmptyDiv(true).addService(googletag.pubads());
+
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
@@ -89,11 +149,11 @@
                     <div id="navbar" class="navbar-collapse collapse">
 
                         <!-- Left nav -->
-                          <ul class="nav navbar-nav navbar-left">
+                        <ul class="nav navbar-nav navbar-left">
                             <li class="active hidden">
                                 <a href="index.html">Home</a>
                             </li>
-                              <li>
+                            <li>
                                 <a href="section_page_news.html">News <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
@@ -121,7 +181,7 @@
                                     </li>
                                 </ul>
                             </li>
-                              <li>
+                            <li>
                                 <a href="section_page_sports.html">Sports <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
@@ -138,7 +198,7 @@
                                     </li>
                                 </ul>
                             </li>
-                             <li>
+                            <li>
                                 <a href="section_page_women.html">Women <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
@@ -150,17 +210,17 @@
                                     <li>
                                         <a href="section_page_women.html">Beauty & Fashion</a>
                                     </li>
-                                   
+
                                 </ul>
                             </li>
                             <li>
                                 <a href="section_page_lifestyle.html">Lifestyle <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                   
+
                                     <li>
                                         <a href="section_page_news.html">Food & Travel</a>
                                     </li>
-                                   
+
                                     <li>
                                         <a href="section_page_news.html">Health</a>
                                     </li>
@@ -169,7 +229,7 @@
                                     </li>
                                 </ul>
                             </li>
-                        
+
                             <li>
                                 <a href="section_page_tech.html">Tech <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
@@ -315,9 +375,19 @@
                     </div>
                 </div>
                 <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
+                    <!--
                     <a href="#">
                         <img class="img-responsive" src="images/ad_300x250.png" alt="" />
                     </a>
+-->
+                        <!-- /73195129/Entertainment_top_rectangle -->
+                    <div id='div-gpt-ad-1489389129439-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1489389129439-0');
+                            });
+                        </script>
+                    </div>
                 </div>
             </div>
 
@@ -387,10 +457,22 @@
 -->
                     </div>
                 </div>
-                <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
+                <div class="col-xs-12 mobile_only_ads">
+                    <!--
                     <a href="#">
                         <img class="img-responsive" src="images/ad_300x250.png" alt="" />
                     </a>
+-->
+                    <!-- /73195129/Entertainment_top_rectangle -->
+                    <div id='div-gpt-ad-1489389129439-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1489389129439-0');
+                            });
+                        </script>
+                    </div>
+
+
                 </div>
             </div>
 
@@ -480,10 +562,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
+                <div class="col-xs-12 mobile_only_ads">
+<!--
                     <a href="#">
                         <img class="img-responsive" src="images/ad_300x250.png" alt="" />
                     </a>
+-->
+                     <!-- /73195129/Entertainment_middle_rectangle -->
+                            <div id='div-gpt-ad-1489389184886-0' style='text-align: center'>
+                                <script>
+                                    googletag.cmd.push(function() {
+                                        googletag.display('div-gpt-ad-1489389184886-0');
+                                    });
+                                </script>
+                            </div>
+                  
                 </div>
             </div>
 
@@ -591,10 +684,20 @@
 
         </div>
         <div class="container">
-            <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
+            <div class="col-xs-12 mobile_only_ads">
+<!--
                 <a href="#">
                     <img class="img-responsive" src="images/ad_300x250.png" alt="" />
                 </a>
+-->
+                 <!-- /73195129/Entertainment_bottom_rectangle -->
+                    <div id='div-gpt-ad-1489389238095-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1489389238095-0');
+                            });
+                        </script>
+                    </div>
             </div>
             <div class="row" id="columnist-mega-teaser">
                 <div class="col-md-3 col-sm-2 col-xs-2 quote left">

@@ -39,11 +39,70 @@
 
     <script>
         googletag.cmd.push(function() {
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_top_980x280', [980, 280], 'div-gpt-ad-1512672426487-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_middle_650x90', [650, 90], 'div-gpt-ad-1512672394184-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_bottom_650x90', [650, 90], 'div-gpt-ad-1512672372665-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_large_300x600', [300, 600], 'div-gpt-ad-1512625867623-0').addService(googletag.pubads());
-            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_160x600', [160, 600], 'div-gpt-ad-1512622842490-0').addService(googletag.pubads());
+            
+            
+                        var mappingArticle1 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 600], [980, 280]).
+            addSize([1050, 200], [980, 280]). // Desktop
+            build();
+            var mappingArticle2 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [650, 90]).
+            addSize([1050, 200], [650, 90]). // Desktop
+            build();
+            var mappingArticle3 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [650, 90]).
+            addSize([1050, 200], [650, 90]). // Desktop
+            build();
+            var mappingArticle4 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [160, 600]).
+            addSize([1050, 200], [160, 600]). // Desktop
+            build();
+            var mappingArticle5 = googletag.sizeMapping().
+            addSize([0, 0], []).
+            addSize([992, 200], [300, 600]).
+            addSize([1050, 200], [300, 600]). // Desktop
+            build();
+
+            // ***************mobile*******************
+
+            var mappingArticleMobile1 = googletag.sizeMapping().
+            addSize([640, 480], [300, 250]).
+            addSize([0, 0], [300, 250]).addSize([1024, 768], []).
+            addSize([1066, 868], []).
+            addSize([992, 690], []).
+            build();
+            var mappingArticleMobile2 = googletag.sizeMapping().
+            addSize([0, 0], [300, 250]).addSize([1066, 868], []).
+            addSize([992, 690], []).
+            build();
+            var mappingArticleMobile3 = googletag.sizeMapping().
+            addSize([0, 0], [300, 250]).addSize([1066, 868], []).
+            addSize([992, 690], []).
+            build();
+            
+            
+            
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_top_980x280', [980, 280], 'div-gpt-ad-1512672426487-0').defineSizeMapping(mappingArticle1).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_middle_650x90', [650, 90], 'div-gpt-ad-1512672394184-0').defineSizeMapping(mappingArticle2).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_entertainment_bottom_650x90', [650, 90], 'div-gpt-ad-1512672372665-0').defineSizeMapping(mappingArticle3).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_large_300x600', [300, 600], 'div-gpt-ad-1512625867623-0').defineSizeMapping(mappingArticle5).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/duwun_desktop_new_template_skyscraper_160x600', [160, 600], 'div-gpt-ad-1512622842490-0').defineSizeMapping(mappingArticle4).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            
+            
+            
+            
+              //            ***************moblile*************
+
+              googletag.defineSlot('/73195129/News_Top-Rectangle', [300, 250], 'div-gpt-ad-1489130773191-0').defineSizeMapping(mappingArticleMobile1).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/News_Middle_Rectangle', [300, 250], 'div-gpt-ad-1489130844445-0').defineSizeMapping(mappingArticleMobile2).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            googletag.defineSlot('/73195129/News_Bottom_Rectangle', [300, 250], 'div-gpt-ad-1489130914315-0').defineSizeMapping(mappingArticleMobile3).setCollapseEmptyDiv(true).addService(googletag.pubads());
+            
+            
+            
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
@@ -279,7 +338,7 @@
                     <div id="top-leader-board" style="text-align:center;" class="ads_center">
 
                         <!-- /73195129/duwun_desktop_new_template_entertainment_top_980x280 -->
-                        <div id='div-gpt-ad-1512672426487-0' style='height:280px; width:980px;'>
+                        <div id='div-gpt-ad-1512672426487-0'>
                             <script>
                                 googletag.cmd.push(function() {
                                     googletag.display('div-gpt-ad-1512672426487-0');
@@ -295,10 +354,25 @@
                         <br /><br />
                     </div>
                 </div>
+<!--
                 <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
                     <a href="#">
                         <img class="img-responsive" src="images/ad_300x250.png" alt="" />
                     </a>
+                </div>
+-->
+                    <div class="col-xs-12 mobile_only_ads">
+      
+<!--                     /73195129/News_Top-Rectangle -->
+                    <div id='div-gpt-ad-1489130773191-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1489130773191-0');
+                            });
+
+                        </script>
+                    </div>
+
                 </div>
             </div>
 
@@ -584,11 +658,8 @@
 
                         <p>တစ္ေန႔လံုး အလုပ္ေတြလုပ္ၿပီး ပင္ပန္းႏြမ္းနယ္ခဲ့သမွ် ညဘက္ ေရေအးေအးေလး စိမ္ခ်ိဳးလိုက္ရရင္ စိတ္က သက္ေတာင့္သက္သာ ျဖစ္သြားပါတယ္။ ဆပ္ျပဳျမႇဳပ္ေတြထဲဝင္စိမ္၊ အနံ႔ေမႊးတဲ့ဖေယာင္းတိုင္ေလးထြန္းလိုက္ၿပီး ေရကိုစိမ္ခ်ိဳးရတာဟာ စိတ္ကိုတည္ၿငိမ္ေအးခ်မ္းေစပါတယ္။ ေသြးလည္ပတ္မႈကို ေကာင္းမြန္ေစၿပီး ၾကြက္သားေတြကို သက္ေတာင့္သက္သာျဖစ္ေစတာမို႕ ညအိပ္ခါနီး ေရခ်ိဳးတာက တကယ္ကိုေကာင္းပါတယ္။ ကိုယ့္အသားအေရေလးလည္းလွ၊ စိတ္လည္း တည္ၿငိမ္ေအးခ်မ္းေစဖုိ႔အတြက္ ေရခ်ိဳးနည္း ႐ွိပါတယ္။ လိုအပ္တဲ့ ပစၥည္းေတြကိုေတာ့ စံုေအာင္ ႐ွာထားေနာ္။ ဒါမွ အက်ိဳးသက္ေရာက္မႈေကာင္းမွာ။</p>
                     </div>
-                    <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
-                        <a href="#">
-                            <img class="img-responsive" src="images/ad_300x250.png" alt="" />
-                        </a>
-                    </div>
+
+             
                     <div class="fb_reaction_buttons text-center clearfix">
                         <img src="images/fb-reaction-buttons.gif" />
                     </div>
@@ -672,6 +743,19 @@
             </article>
 
             <div class="row row-teasers">
+                          <div class="col-xs-12 mobile_only_ads">
+      
+                    <!-- /73195129/News_Middle_Rectangle -->
+                    <div id='div-gpt-ad-1489130844445-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1489130844445-0');
+                            });
+
+                        </script>
+                    </div>
+
+                </div>
                 <h4><em>RELATED ARTICLES</em></h4>
                 <ul class="article_page_teasers">
                     <li class="wow fadeInDown col-lg-4 col-md-4 col-sm-6 col-xs-6">
@@ -780,11 +864,7 @@
                         -->
                     </div>
                 </div>
-                <div class="hidden-lg hidden-md hidden-sm col-xs-12 mobile_only_ads">
-                    <a href="#">
-                        <img class="img-responsive" src="images/ad_300x250.png" alt="" />
-                    </a>
-                </div>
+            
             </div>
 
             <div class="row row-teasers">
@@ -846,9 +926,11 @@
                     </div>
 
                     <div class="row dw-widget-teasers-video">
+                        
                         <div class="col-sm-12">
                             <div class="teaser_caption">Video</div>
                         </div>
+                        
                         <div class="col-lg-8 col-md-7 col-sm-12">
                             <div class="wow fadeInDown dw-teaser-video-big">
                                 <!--
@@ -946,7 +1028,19 @@
                     </div>
 
                     <div class="row row-teasers">
+         <div class="col-xs-12 mobile_only_ads">
+      
+                    <!-- /73195129/News_Bottom-Rectangle -->
+                    <div id='div-gpt-ad-1489130914315-0' style='text-align: center'>
+                        <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1489130914315-0');
+                            });
 
+                        </script>
+                    </div>
+
+                </div>
                         <ul class="article_page_teasers">
                             <li class="wow fadeInDown col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <figure class="teaser_img">
