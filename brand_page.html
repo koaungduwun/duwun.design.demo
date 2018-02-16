@@ -1,4 +1,36 @@
-<?php include 'parts/head.php'; ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Duwun Demo</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//mmwebfonts.comquas.com">
+    <!--link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" /-->
+    <!--<link rel="stylesheet" href='http://mywebfont.appspot.com/css?font=zawgyi' /-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=zawgyi&ver=4.8" type="text/css" media="all">-->
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=oursunicode' />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.smartmenus.bootstrap.css" />
+    <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.min.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+    <link rel="icon" href="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-160x160.png" sizes="32x32">
+    <link rel="icon" href="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-250x250.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-250x250.png">
+    <meta name="msapplication-TileImage" content="http://quiz.duwun.com.mm/wp-content/uploads/2017/06/cropped-duwun-logo-square-300x300.png">
 </head>
 
 <body id="dw-page-brand">
@@ -15,7 +47,192 @@
         <div id="status">&nbsp;</div>
     </div>
     <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-    <?php include 'parts/nav.php'; ?>
+    <header id="header" class="">
+        <div id="header-container" class="container-fluid" data-spy="affix" data-offset-top="30">
+            <!-- Navbar fixed top -->
+            <nav id="main-navbar" class="navbar navbar-default navbar-static-top" role="navigation">
+
+                <div class="container">                      
+                    
+                    <div class="navbar-header">
+                        <div class="nav_main_search">
+                            <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
+                        </div>                       
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/duwun-logo.png" alt="" />
+                        </a>                        
+                    </div>
+                    
+                    <div id="navbar" class="navbar-collapse collapse">
+  
+                        <!-- Left nav -->
+                          <ul class="nav navbar-nav navbar-left">
+                            <li class="active hidden">
+                                <a href="index.html">Home</a>
+                            </li>
+                              <li>
+                                <a href="section_page_news.html">News <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="section_page_news.html">Local News</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_news.html">International News</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_news.html">Odd News</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="section_page_entertainment.html">Entertainment <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="section_page_entertainment.html">Local Celebrity</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_entertainment.html">International Celebrity</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_entertainment.html">Movie & Music</a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <li>
+                                <a href="section_page_sports.html">Sports <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="section_page_sports.html">EPL</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_sports.html">International Sports</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_sports.html">Local Sports</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_sports.html">Other Sports</a>
+                                    </li>
+                                </ul>
+                            </li>
+                             <li>
+                                <a href="section_page_women.html">Women <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="section_page_women.html">Empowerment & Culture</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_women.html">Relationships</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_women.html">Beauty & Fashion</a>
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="section_page_lifestyle.html">Lifestyle <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                   
+                                    <li>
+                                        <a href="section_page_news.html">Food & Travel</a>
+                                    </li>
+                                   
+                                    <li>
+                                        <a href="section_page_news.html">Health</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_news.html">Quiz</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        
+                            <li>
+                                <a href="section_page_tech.html">Tech <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="section_page_tech.html">Company News</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_tech.html">Gadget</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_tech.html">Mobile</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="section_page_education.html">Education <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="section_page_education.html">Local Education</a>
+                                    </li>
+                                    <li>
+                                        <a href="section_page_education.html">International Education</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="section_page.html" class="duwun-menu-tv">TV</a>
+                            </li>
+                            <li class="hidden" hidden><a href="#">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Nav header</li>
+                                    <li><a href="#">A sub menu <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>
+                                            <li><a href="#">One more link</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">A separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Right nav -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li>
+                                <a class="icon8-a icons8-facebook-messenger" href="#">
+                                    <img src="assets/css/images/icons8-facebook-messenger.svg" class="svg icons8-Facebook-Messenger-Filled" />
+                                </a>
+                            </li>
+                            <li>
+                                <a class="icon8-a icons8-viber" href="#">
+                                    <img src="assets/css/images/icons8-viber.svg" class="svg icons8-Viber-Filled" />
+                                </a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                            <li class="nav_main_search">
+                                <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!--/.nav-collapse -->
+                         
+                    <div class="nav_search_form_wrapper">
+                        <form action="#" id="nav_search_form">
+                            <input class="search_bar" type="text" placeholder="Search here">
+                        </form>                             
+                    </div>                     
+                </div>
+                
+                <!--/.container -->
+            </nav>
+        </div>
+    </header>
+
 <div class="modal fade social-modal bs-social-modal-sm-42" tabindex="-1" role="dialog" aria-labelledby="mySocialModalLabel">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
