@@ -355,7 +355,7 @@ table {
 
 #header {
     background-color: $primary-color;
-    min-height: 100px;
+//    min-height: 100px;
 }
 
 #header-container {
@@ -531,6 +531,7 @@ table {
             ul {
                 li a {
                     text-transform: uppercase;
+                  font-size: 14px;
                     &.duwun-menu-tv {
                         background-color: black;
                         border-radius: 4px;
@@ -2602,5 +2603,136 @@ i.fa {
         }
     }
 }
+//***********************rewrite******************************
+@media only screen and (min-width: 720px){
+#nav-topbar.desktop-sticky {
+    /* height: auto!important; */
+    overflow: visible;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+}
 
 
+
+                @media(max-width:769px) {
+                    nav {
+                        display: none;
+                    }
+
+                }
+
+                @media(min-width:769px) {
+                    #blick-app-menu {
+                        display: none;
+                    }
+
+                }
+
+                #side-menu-icon-balance img {
+
+                    max-width: 100%;
+
+                }
+
+                .site-title {
+                    min-width: 100px;
+                }
+
+                #blick-app-menu {
+                    padding-bottom: 50px;
+                }
+
+                #blick-app-menu #side-menu-top-container a {
+                    text-decoration: none;
+                }
+
+                #blick-app-menu #side-menu-top-container a.title {
+                    color: #ed7123;
+                }
+
+                #sidebarOverlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                    visibility: hidden;
+                }
+
+
+                @-webkit-keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+
+                @-webkit-keyframes fadeOut {
+                    from {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    to {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+
+                @keyframes fadeOut {
+                    from {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    to {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+
+                .fade-out {
+                    -webkit-animation: fadeOut 0.3s linear;
+                    animation: fadeOut 0.3s linear;
+                }
+
+                .fade-in {
+                    visibility: visible!important;
+                    -webkit-animation: fadeIn 0.3s linear;
+                    animation: fadeIn 0.3s linear;
+                }
+
+  
+
+
+
+//**************************** wedding and baby image *************************************
+
+
+   a[title="Wedding"]{
+        background-image: url(https://www.marry.com.mm/wp-content/plugins/ringier-v1/app/Views/_assets/images/img-marry-logo.svg);
+        background-repeat: no-repeat;
+        background-position: 64% center;
+    }
+   a[title="Baby"] {
+        background-image: url(https://www.marry.com.mm/wp-content/plugins/ringier-v1/app/Views/_assets/images/img-kalay-logo.svg);
+        background-repeat: no-repeat;
+        background-position: 42% center;
+    }
+    
+
+
+
+
+       
